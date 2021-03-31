@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAD266DE2614CDD700C1FBD8 /* CrypTouchBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD266DD2614CDD700C1FBD8 /* CrypTouchBarApp.swift */; };
+		CAD266E02614CDD700C1FBD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD266DF2614CDD700C1FBD8 /* ContentView.swift */; };
+		CAD266E22614CDD800C1FBD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD266E12614CDD800C1FBD8 /* Assets.xcassets */; };
+		CAD266E52614CDD800C1FBD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD266E42614CDD800C1FBD8 /* Preview Assets.xcassets */; };
+		CAD266F12614CDD800C1FBD8 /* CrypTouchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD266F02614CDD800C1FBD8 /* CrypTouchBarTests.swift */; };
+		CAD266FC2614CDD800C1FBD8 /* CrypTouchBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD266FB2614CDD800C1FBD8 /* CrypTouchBarUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAD266ED2614CDD800C1FBD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAD266D22614CDD700C1FBD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAD266D92614CDD700C1FBD8;
+			remoteInfo = CrypTouchBar;
+		};
+		CAD266F82614CDD800C1FBD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAD266D22614CDD700C1FBD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAD266D92614CDD700C1FBD8;
+			remoteInfo = CrypTouchBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CAD266DA2614CDD700C1FBD8 /* CrypTouchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrypTouchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD266DD2614CDD700C1FBD8 /* CrypTouchBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypTouchBarApp.swift; sourceTree = "<group>"; };
+		CAD266DF2614CDD700C1FBD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CAD266E12614CDD800C1FBD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAD266E42614CDD800C1FBD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CAD266E62614CDD800C1FBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAD266E72614CDD800C1FBD8 /* CrypTouchBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrypTouchBar.entitlements; sourceTree = "<group>"; };
+		CAD266EC2614CDD800C1FBD8 /* CrypTouchBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrypTouchBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD266F02614CDD800C1FBD8 /* CrypTouchBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypTouchBarTests.swift; sourceTree = "<group>"; };
+		CAD266F22614CDD800C1FBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAD266F72614CDD800C1FBD8 /* CrypTouchBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrypTouchBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD266FB2614CDD800C1FBD8 /* CrypTouchBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypTouchBarUITests.swift; sourceTree = "<group>"; };
+		CAD266FD2614CDD800C1FBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAD266D72614CDD700C1FBD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD266E92614CDD800C1FBD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD266F42614CDD800C1FBD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAD266D12614CDD700C1FBD8 = {
+			isa = PBXGroup;
+			children = (
+				CAD266DC2614CDD700C1FBD8 /* CrypTouchBar */,
+				CAD266EF2614CDD800C1FBD8 /* CrypTouchBarTests */,
+				CAD266FA2614CDD800C1FBD8 /* CrypTouchBarUITests */,
+				CAD266DB2614CDD700C1FBD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAD266DB2614CDD700C1FBD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAD266DA2614CDD700C1FBD8 /* CrypTouchBar.app */,
+				CAD266EC2614CDD800C1FBD8 /* CrypTouchBarTests.xctest */,
+				CAD266F72614CDD800C1FBD8 /* CrypTouchBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAD266DC2614CDD700C1FBD8 /* CrypTouchBar */ = {
+			isa = PBXGroup;
+			children = (
+				CAD266DD2614CDD700C1FBD8 /* CrypTouchBarApp.swift */,
+				CAD266DF2614CDD700C1FBD8 /* ContentView.swift */,
+				CAD266E12614CDD800C1FBD8 /* Assets.xcassets */,
+				CAD266E62614CDD800C1FBD8 /* Info.plist */,
+				CAD266E72614CDD800C1FBD8 /* CrypTouchBar.entitlements */,
+				CAD266E32614CDD800C1FBD8 /* Preview Content */,
+			);
+			path = CrypTouchBar;
+			sourceTree = "<group>";
+		};
+		CAD266E32614CDD800C1FBD8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CAD266E42614CDD800C1FBD8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAD266EF2614CDD800C1FBD8 /* CrypTouchBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAD266F02614CDD800C1FBD8 /* CrypTouchBarTests.swift */,
+				CAD266F22614CDD800C1FBD8 /* Info.plist */,
+			);
+			path = CrypTouchBarTests;
+			sourceTree = "<group>";
+		};
+		CAD266FA2614CDD800C1FBD8 /* CrypTouchBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CAD266FB2614CDD800C1FBD8 /* CrypTouchBarUITests.swift */,
+				CAD266FD2614CDD800C1FBD8 /* Info.plist */,
+			);
+			path = CrypTouchBarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAD266D92614CDD700C1FBD8 /* CrypTouchBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAD267002614CDD800C1FBD8 /* Build configuration list for PBXNativeTarget "CrypTouchBar" */;
+			buildPhases = (
+				CAD266D62614CDD700C1FBD8 /* Sources */,
+				CAD266D72614CDD700C1FBD8 /* Frameworks */,
+				CAD266D82614CDD700C1FBD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrypTouchBar;
+			productName = CrypTouchBar;
+			productReference = CAD266DA2614CDD700C1FBD8 /* CrypTouchBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAD266EB2614CDD800C1FBD8 /* CrypTouchBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAD267032614CDD800C1FBD8 /* Build configuration list for PBXNativeTarget "CrypTouchBarTests" */;
+			buildPhases = (
+				CAD266E82614CDD800C1FBD8 /* Sources */,
+				CAD266E92614CDD800C1FBD8 /* Frameworks */,
+				CAD266EA2614CDD800C1FBD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAD266EE2614CDD800C1FBD8 /* PBXTargetDependency */,
+			);
+			name = CrypTouchBarTests;
+			productName = CrypTouchBarTests;
+			productReference = CAD266EC2614CDD800C1FBD8 /* CrypTouchBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAD266F62614CDD800C1FBD8 /* CrypTouchBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAD267062614CDD800C1FBD8 /* Build configuration list for PBXNativeTarget "CrypTouchBarUITests" */;
+			buildPhases = (
+				CAD266F32614CDD800C1FBD8 /* Sources */,
+				CAD266F42614CDD800C1FBD8 /* Frameworks */,
+				CAD266F52614CDD800C1FBD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAD266F92614CDD800C1FBD8 /* PBXTargetDependency */,
+			);
+			name = CrypTouchBarUITests;
+			productName = CrypTouchBarUITests;
+			productReference = CAD266F72614CDD800C1FBD8 /* CrypTouchBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAD266D22614CDD700C1FBD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CAD266D92614CDD700C1FBD8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CAD266EB2614CDD800C1FBD8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CAD266D92614CDD700C1FBD8;
+					};
+					CAD266F62614CDD800C1FBD8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CAD266D92614CDD700C1FBD8;
+					};
+				};
+			};
+			buildConfigurationList = CAD266D52614CDD700C1FBD8 /* Build configuration list for PBXProject "CrypTouchBar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAD266D12614CDD700C1FBD8;
+			productRefGroup = CAD266DB2614CDD700C1FBD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAD266D92614CDD700C1FBD8 /* CrypTouchBar */,
+				CAD266EB2614CDD800C1FBD8 /* CrypTouchBarTests */,
+				CAD266F62614CDD800C1FBD8 /* CrypTouchBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAD266D82614CDD700C1FBD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD266E52614CDD800C1FBD8 /* Preview Assets.xcassets in Resources */,
+				CAD266E22614CDD800C1FBD8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD266EA2614CDD800C1FBD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD266F52614CDD800C1FBD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAD266D62614CDD700C1FBD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD266E02614CDD700C1FBD8 /* ContentView.swift in Sources */,
+				CAD266DE2614CDD700C1FBD8 /* CrypTouchBarApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD266E82614CDD800C1FBD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD266F12614CDD800C1FBD8 /* CrypTouchBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD266F32614CDD800C1FBD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD266FC2614CDD800C1FBD8 /* CrypTouchBarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAD266EE2614CDD800C1FBD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAD266D92614CDD700C1FBD8 /* CrypTouchBar */;
+			targetProxy = CAD266ED2614CDD800C1FBD8 /* PBXContainerItemProxy */;
+		};
+		CAD266F92614CDD800C1FBD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAD266D92614CDD700C1FBD8 /* CrypTouchBar */;
+			targetProxy = CAD266F82614CDD800C1FBD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CAD266FE2614CDD800C1FBD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAD266FF2614CDD800C1FBD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CAD267012614CDD800C1FBD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CrypTouchBar/CrypTouchBar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"CrypTouchBar/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CrypTouchBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CAD267022614CDD800C1FBD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CrypTouchBar/CrypTouchBar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"CrypTouchBar/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CrypTouchBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CAD267042614CDD800C1FBD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CrypTouchBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrypTouchBar.app/Contents/MacOS/CrypTouchBar";
+			};
+			name = Debug;
+		};
+		CAD267052614CDD800C1FBD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CrypTouchBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrypTouchBar.app/Contents/MacOS/CrypTouchBar";
+			};
+			name = Release;
+		};
+		CAD267072614CDD800C1FBD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CrypTouchBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = CrypTouchBar;
+			};
+			name = Debug;
+		};
+		CAD267082614CDD800C1FBD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CrypTouchBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = CrypTouchBar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAD266D52614CDD700C1FBD8 /* Build configuration list for PBXProject "CrypTouchBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD266FE2614CDD800C1FBD8 /* Debug */,
+				CAD266FF2614CDD800C1FBD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAD267002614CDD800C1FBD8 /* Build configuration list for PBXNativeTarget "CrypTouchBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD267012614CDD800C1FBD8 /* Debug */,
+				CAD267022614CDD800C1FBD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAD267032614CDD800C1FBD8 /* Build configuration list for PBXNativeTarget "CrypTouchBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD267042614CDD800C1FBD8 /* Debug */,
+				CAD267052614CDD800C1FBD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAD267062614CDD800C1FBD8 /* Build configuration list for PBXNativeTarget "CrypTouchBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD267072614CDD800C1FBD8 /* Debug */,
+				CAD267082614CDD800C1FBD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAD266D22614CDD700C1FBD8 /* Project object */;
+}
