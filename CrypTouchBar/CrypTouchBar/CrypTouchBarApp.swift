@@ -11,7 +11,8 @@ import SwiftUI
 struct CrypTouchBarApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EntryView(viewModel: EntryViewModel())
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
     }
 }
