@@ -3,13 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		57BAB7CB2618793F002B7FB5 /* TouchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BAB7C82618793F002B7FB5 /* TouchBarView.swift */; };
 		57BAB7CC2618793F002B7FB5 /* TouchBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BAB7C92618793F002B7FB5 /* TouchBarItemView.swift */; };
 		57BAB7CD2618793F002B7FB5 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BAB7CA2618793F002B7FB5 /* Coin.swift */; };
+		CA0B65B2261890E40054D5B5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CA0B65B1261890E40054D5B5 /* SwiftyJSON */; };
+		CA0B65B826189A170054D5B5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CA0B65B726189A170054D5B5 /* Alamofire */; };
+		CA0B65C12618C3C20054D5B5 /* CoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B65C02618C3C20054D5B5 /* CoinService.swift */; };
+		CA0B65C92618C5DB0054D5B5 /* TouchBarItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B65C82618C5DB0054D5B5 /* TouchBarItemViewModel.swift */; };
 		CAD266DE2614CDD700C1FBD8 /* CrypTouchBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD266DD2614CDD700C1FBD8 /* CrypTouchBarApp.swift */; };
 		CAD266E22614CDD800C1FBD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD266E12614CDD800C1FBD8 /* Assets.xcassets */; };
 		CAD266E52614CDD800C1FBD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD266E42614CDD800C1FBD8 /* Preview Assets.xcassets */; };
@@ -17,7 +21,6 @@
 		CAD266FC2614CDD800C1FBD8 /* CrypTouchBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD266FB2614CDD800C1FBD8 /* CrypTouchBarUITests.swift */; };
 		CAD267102614D1D500C1FBD8 /* EntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD2670F2614D1D500C1FBD8 /* EntryViewModel.swift */; };
 		CAD267182614D1DD00C1FBD8 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD267172614D1DD00C1FBD8 /* EntryView.swift */; };
-		CAD267232614D60000C1FBD8 /* EntryFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD267222614D60000C1FBD8 /* EntryFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,8 @@
 		57BAB7C82618793F002B7FB5 /* TouchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchBarView.swift; sourceTree = "<group>"; };
 		57BAB7C92618793F002B7FB5 /* TouchBarItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchBarItemView.swift; sourceTree = "<group>"; };
 		57BAB7CA2618793F002B7FB5 /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		CA0B65C02618C3C20054D5B5 /* CoinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinService.swift; sourceTree = "<group>"; };
+		CA0B65C82618C5DB0054D5B5 /* TouchBarItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarItemViewModel.swift; sourceTree = "<group>"; };
 		CAD266DA2614CDD700C1FBD8 /* CrypTouchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrypTouchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD266DD2614CDD700C1FBD8 /* CrypTouchBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypTouchBarApp.swift; sourceTree = "<group>"; };
 		CAD266E12614CDD800C1FBD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,7 +60,6 @@
 		CAD266FD2614CDD800C1FBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAD2670F2614D1D500C1FBD8 /* EntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewModel.swift; sourceTree = "<group>"; };
 		CAD267172614D1DD00C1FBD8 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
-		CAD267222614D60000C1FBD8 /* EntryFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0B65B2261890E40054D5B5 /* SwiftyJSON in Frameworks */,
+				CA0B65B826189A170054D5B5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,11 +92,20 @@
 		57BAB7C72618793F002B7FB5 /* Touch Bar */ = {
 			isa = PBXGroup;
 			children = (
-				57BAB7C82618793F002B7FB5 /* TouchBarView.swift */,
 				57BAB7C92618793F002B7FB5 /* TouchBarItemView.swift */,
 				57BAB7CA2618793F002B7FB5 /* Coin.swift */,
+				57BAB7C82618793F002B7FB5 /* TouchBarView.swift */,
+				CA0B65C82618C5DB0054D5B5 /* TouchBarItemViewModel.swift */,
 			);
 			path = "Touch Bar";
+			sourceTree = "<group>";
+		};
+		CA0B65BF2618C3B40054D5B5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CA0B65C02618C3C20054D5B5 /* CoinService.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		CAD266D12614CDD700C1FBD8 = {
@@ -155,6 +170,7 @@
 		CAD2670D2614D1C600C1FBD8 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
+				CA0B65BF2618C3B40054D5B5 /* Networking */,
 				57BAB7C72618793F002B7FB5 /* Touch Bar */,
 				CAD2670E2614D1CC00C1FBD8 /* Entry */,
 			);
@@ -166,7 +182,6 @@
 			children = (
 				CAD2670F2614D1D500C1FBD8 /* EntryViewModel.swift */,
 				CAD267172614D1DD00C1FBD8 /* EntryView.swift */,
-				CAD267222614D60000C1FBD8 /* EntryFetcher.swift */,
 			);
 			path = Entry;
 			sourceTree = "<group>";
@@ -187,6 +202,10 @@
 			dependencies = (
 			);
 			name = CrypTouchBar;
+			packageProductDependencies = (
+				CA0B65B1261890E40054D5B5 /* SwiftyJSON */,
+				CA0B65B726189A170054D5B5 /* Alamofire */,
+			);
 			productName = CrypTouchBar;
 			productReference = CAD266DA2614CDD700C1FBD8 /* CrypTouchBar.app */;
 			productType = "com.apple.product-type.application";
@@ -258,6 +277,10 @@
 				Base,
 			);
 			mainGroup = CAD266D12614CDD700C1FBD8;
+			packageReferences = (
+				CA0B65B0261890E40054D5B5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				CA0B65B626189A170054D5B5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CAD266DB2614CDD700C1FBD8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -300,12 +323,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAD267232614D60000C1FBD8 /* EntryFetcher.swift in Sources */,
 				57BAB7CC2618793F002B7FB5 /* TouchBarItemView.swift in Sources */,
+				CA0B65C92618C5DB0054D5B5 /* TouchBarItemViewModel.swift in Sources */,
 				CAD267102614D1D500C1FBD8 /* EntryViewModel.swift in Sources */,
 				CAD266DE2614CDD700C1FBD8 /* CrypTouchBarApp.swift in Sources */,
 				CAD267182614D1DD00C1FBD8 /* EntryView.swift in Sources */,
 				57BAB7CB2618793F002B7FB5 /* TouchBarView.swift in Sources */,
+				CA0B65C12618C3C20054D5B5 /* CoinService.swift in Sources */,
 				57BAB7CD2618793F002B7FB5 /* Coin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,6 +645,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA0B65B0261890E40054D5B5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.1;
+			};
+		};
+		CA0B65B626189A170054D5B5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA0B65B1261890E40054D5B5 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA0B65B0261890E40054D5B5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		CA0B65B726189A170054D5B5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA0B65B626189A170054D5B5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CAD266D22614CDD700C1FBD8 /* Project object */;
 }

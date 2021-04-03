@@ -1,28 +1,26 @@
 import SwiftUI
 
 struct TouchBarView: View {
-    let coins: [Coin]
+    let itemSymbols: [String]
 
     var body: some View {
         VStack{
+            touchBar
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.black)
         .focusable()
         .touchBar { touchBar }
     }
 
     private var touchBar: some View {
-        ForEach(coins) { coin in
-            TouchBarItemView(coin: coin)
+        Group {
+            HStack {
+                ForEach(itemSymbols, id: \.self) { symbol in
+                    TouchBarItemView(viewModel: TouchBarItemViewModel(symbol: symbol))
+                }
+            }
         }
-    }
-}
-
-struct TouchBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        TouchBarView(coins: [
-                Coin(name: "BTC/USDT", currentPrice: 58123.456),
-                Coin(name: "ETH/USDT", currentPrice: 2100.5),
-                Coin(name: "LINA/USDT", currentPrice: 0.00234),
-            ])
+        .frame(width: 685, height: 30)
     }
 }

@@ -4,7 +4,7 @@ struct EntryView: View {
     @ObservedObject var viewModel: EntryViewModel
     
     var body: some View {
-        TouchBarView(coins: viewModel.coins)
+        TouchBarView(itemSymbols: viewModel.itemSymbols)
     }
 }
 
