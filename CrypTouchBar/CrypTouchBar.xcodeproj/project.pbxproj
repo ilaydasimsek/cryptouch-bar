@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57BAB7CB2618793F002B7FB5 /* TouchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BAB7C82618793F002B7FB5 /* TouchBarView.swift */; };
+		57BAB7CC2618793F002B7FB5 /* TouchBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BAB7C92618793F002B7FB5 /* TouchBarItemView.swift */; };
+		57BAB7CD2618793F002B7FB5 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BAB7CA2618793F002B7FB5 /* Coin.swift */; };
 		CAD266DE2614CDD700C1FBD8 /* CrypTouchBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD266DD2614CDD700C1FBD8 /* CrypTouchBarApp.swift */; };
 		CAD266E22614CDD800C1FBD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD266E12614CDD800C1FBD8 /* Assets.xcassets */; };
 		CAD266E52614CDD800C1FBD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD266E42614CDD800C1FBD8 /* Preview Assets.xcassets */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57BAB7C82618793F002B7FB5 /* TouchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchBarView.swift; sourceTree = "<group>"; };
+		57BAB7C92618793F002B7FB5 /* TouchBarItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchBarItemView.swift; sourceTree = "<group>"; };
+		57BAB7CA2618793F002B7FB5 /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		CAD266DA2614CDD700C1FBD8 /* CrypTouchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrypTouchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD266DD2614CDD700C1FBD8 /* CrypTouchBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypTouchBarApp.swift; sourceTree = "<group>"; };
 		CAD266E12614CDD800C1FBD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +83,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57BAB7C72618793F002B7FB5 /* Touch Bar */ = {
+			isa = PBXGroup;
+			children = (
+				57BAB7C82618793F002B7FB5 /* TouchBarView.swift */,
+				57BAB7C92618793F002B7FB5 /* TouchBarItemView.swift */,
+				57BAB7CA2618793F002B7FB5 /* Coin.swift */,
+			);
+			path = "Touch Bar";
+			sourceTree = "<group>";
+		};
 		CAD266D12614CDD700C1FBD8 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +155,7 @@
 		CAD2670D2614D1C600C1FBD8 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
+				57BAB7C72618793F002B7FB5 /* Touch Bar */,
 				CAD2670E2614D1CC00C1FBD8 /* Entry */,
 			);
 			path = Activities;
@@ -284,9 +301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAD267232614D60000C1FBD8 /* EntryFetcher.swift in Sources */,
+				57BAB7CC2618793F002B7FB5 /* TouchBarItemView.swift in Sources */,
 				CAD267102614D1D500C1FBD8 /* EntryViewModel.swift in Sources */,
 				CAD266DE2614CDD700C1FBD8 /* CrypTouchBarApp.swift in Sources */,
 				CAD267182614D1DD00C1FBD8 /* EntryView.swift in Sources */,
+				57BAB7CB2618793F002B7FB5 /* TouchBarView.swift in Sources */,
+				57BAB7CD2618793F002B7FB5 /* Coin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

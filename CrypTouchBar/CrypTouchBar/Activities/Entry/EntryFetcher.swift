@@ -1,9 +1,13 @@
 import Foundation
 
 class EntryFetcher {
-    func getEntryPage(completion: ((EntryPage) -> Void)?) {
+    func getCoinInfo(completion: (([Coin]) -> Void)?) {
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-            completion?(EntryPage(title: "I'm a crypto app", subtitle: "APP"))
+            completion?([
+                Coin(name: "BTC/USDT", currentPrice: 58123.456),
+                Coin(name: "ETH/USDT", currentPrice: 2100.5),
+                Coin(name: "LINA/USDT", currentPrice: 0.00234),
+            ])
         })
     }
 }
