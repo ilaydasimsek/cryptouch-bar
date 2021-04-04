@@ -1,6 +1,12 @@
 import SwiftUI
 
 struct TouchBarView: View {
+    
+    struct TouchBarConfig {
+        static let touchBarHeight: CGFloat = 30
+        static let touchBarWidth: CGFloat = 560
+    }
+
     let itemSymbols: [String]
 
     var body: some View {
@@ -21,6 +27,6 @@ struct TouchBarView: View {
                 }
             }
         }
-        .frame(width: 685, height: 30)
+        .frame(width: TouchBarConfig.touchBarWidth, height: TouchBarConfig.touchBarHeight)
     }
 }

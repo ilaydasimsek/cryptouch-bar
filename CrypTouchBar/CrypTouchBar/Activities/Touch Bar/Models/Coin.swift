@@ -1,7 +1,6 @@
 import Foundation
 import SwiftyJSON
 
-
 struct Coin: Decodable, Identifiable {    
     var id: String {
         return symbol
@@ -15,7 +14,12 @@ struct Coin: Decodable, Identifiable {
     }
 
     var displayPrice: String {
-        return "\(Double(price) ?? 0)"
+        let number = NSNumber(value: Double(price) ?? 0.0)
+        return "\(number.decimalValue)"
+    }
+
+    var priceAmount: Double? {
+        return Double(price)
     }
 
     static func decode(fromJson json: JSON) -> Coin? {

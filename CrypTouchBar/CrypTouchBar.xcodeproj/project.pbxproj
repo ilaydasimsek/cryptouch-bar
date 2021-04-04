@@ -14,11 +14,11 @@
 		CA0B65B826189A170054D5B5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CA0B65B726189A170054D5B5 /* Alamofire */; };
 		CA0B65C12618C3C20054D5B5 /* CoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B65C02618C3C20054D5B5 /* CoinService.swift */; };
 		CA0B65C92618C5DB0054D5B5 /* TouchBarItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B65C82618C5DB0054D5B5 /* TouchBarItemViewModel.swift */; };
+		CA0B65D12618E0000054D5B5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B65D02618E0000054D5B5 /* Colors.swift */; };
+		CA0B65D92618E1760054D5B5 /* CoinUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B65D82618E1760054D5B5 /* CoinUtils.swift */; };
 		CAD266DE2614CDD700C1FBD8 /* CrypTouchBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD266DD2614CDD700C1FBD8 /* CrypTouchBarApp.swift */; };
 		CAD266E22614CDD800C1FBD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD266E12614CDD800C1FBD8 /* Assets.xcassets */; };
 		CAD266E52614CDD800C1FBD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD266E42614CDD800C1FBD8 /* Preview Assets.xcassets */; };
-		CAD266F12614CDD800C1FBD8 /* CrypTouchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD266F02614CDD800C1FBD8 /* CrypTouchBarTests.swift */; };
-		CAD266FC2614CDD800C1FBD8 /* CrypTouchBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD266FB2614CDD800C1FBD8 /* CrypTouchBarUITests.swift */; };
 		CAD267102614D1D500C1FBD8 /* EntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD2670F2614D1D500C1FBD8 /* EntryViewModel.swift */; };
 		CAD267182614D1DD00C1FBD8 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD267172614D1DD00C1FBD8 /* EntryView.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +46,8 @@
 		57BAB7CA2618793F002B7FB5 /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		CA0B65C02618C3C20054D5B5 /* CoinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinService.swift; sourceTree = "<group>"; };
 		CA0B65C82618C5DB0054D5B5 /* TouchBarItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarItemViewModel.swift; sourceTree = "<group>"; };
+		CA0B65D02618E0000054D5B5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CA0B65D82618E1760054D5B5 /* CoinUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinUtils.swift; sourceTree = "<group>"; };
 		CAD266DA2614CDD700C1FBD8 /* CrypTouchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrypTouchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD266DD2614CDD700C1FBD8 /* CrypTouchBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypTouchBarApp.swift; sourceTree = "<group>"; };
 		CAD266E12614CDD800C1FBD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,11 +55,7 @@
 		CAD266E62614CDD800C1FBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAD266E72614CDD800C1FBD8 /* CrypTouchBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrypTouchBar.entitlements; sourceTree = "<group>"; };
 		CAD266EC2614CDD800C1FBD8 /* CrypTouchBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrypTouchBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAD266F02614CDD800C1FBD8 /* CrypTouchBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypTouchBarTests.swift; sourceTree = "<group>"; };
-		CAD266F22614CDD800C1FBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAD266F72614CDD800C1FBD8 /* CrypTouchBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrypTouchBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAD266FB2614CDD800C1FBD8 /* CrypTouchBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypTouchBarUITests.swift; sourceTree = "<group>"; };
-		CAD266FD2614CDD800C1FBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAD2670F2614D1D500C1FBD8 /* EntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewModel.swift; sourceTree = "<group>"; };
 		CAD267172614D1DD00C1FBD8 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,9 +90,9 @@
 		57BAB7C72618793F002B7FB5 /* Touch Bar */ = {
 			isa = PBXGroup;
 			children = (
-				57BAB7C92618793F002B7FB5 /* TouchBarItemView.swift */,
-				57BAB7CA2618793F002B7FB5 /* Coin.swift */,
+				CADFD1492619BCA000BC0C00 /* Models */,
 				57BAB7C82618793F002B7FB5 /* TouchBarView.swift */,
+				57BAB7C92618793F002B7FB5 /* TouchBarItemView.swift */,
 				CA0B65C82618C5DB0054D5B5 /* TouchBarItemViewModel.swift */,
 			);
 			path = "Touch Bar";
@@ -112,8 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				CAD266DC2614CDD700C1FBD8 /* CrypTouchBar */,
-				CAD266EF2614CDD800C1FBD8 /* CrypTouchBarTests */,
-				CAD266FA2614CDD800C1FBD8 /* CrypTouchBarUITests */,
 				CAD266DB2614CDD700C1FBD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,9 +127,11 @@
 		CAD266DC2614CDD700C1FBD8 /* CrypTouchBar */ = {
 			isa = PBXGroup;
 			children = (
+				CADFD1422619BC5900BC0C00 /* Resources */,
+				CADFD1412619BC2F00BC0C00 /* Utils */,
+				CA0B65BF2618C3B40054D5B5 /* Networking */,
 				CAD2670D2614D1C600C1FBD8 /* Activities */,
 				CAD266DD2614CDD700C1FBD8 /* CrypTouchBarApp.swift */,
-				CAD266E12614CDD800C1FBD8 /* Assets.xcassets */,
 				CAD266E62614CDD800C1FBD8 /* Info.plist */,
 				CAD266E72614CDD800C1FBD8 /* CrypTouchBar.entitlements */,
 				CAD266E32614CDD800C1FBD8 /* Preview Content */,
@@ -149,30 +147,11 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		CAD266EF2614CDD800C1FBD8 /* CrypTouchBarTests */ = {
-			isa = PBXGroup;
-			children = (
-				CAD266F02614CDD800C1FBD8 /* CrypTouchBarTests.swift */,
-				CAD266F22614CDD800C1FBD8 /* Info.plist */,
-			);
-			path = CrypTouchBarTests;
-			sourceTree = "<group>";
-		};
-		CAD266FA2614CDD800C1FBD8 /* CrypTouchBarUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CAD266FB2614CDD800C1FBD8 /* CrypTouchBarUITests.swift */,
-				CAD266FD2614CDD800C1FBD8 /* Info.plist */,
-			);
-			path = CrypTouchBarUITests;
-			sourceTree = "<group>";
-		};
 		CAD2670D2614D1C600C1FBD8 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
-				CA0B65BF2618C3B40054D5B5 /* Networking */,
+				CADFD14A2619BCA900BC0C00 /* Application */,
 				57BAB7C72618793F002B7FB5 /* Touch Bar */,
-				CAD2670E2614D1CC00C1FBD8 /* Entry */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -184,6 +163,39 @@
 				CAD267172614D1DD00C1FBD8 /* EntryView.swift */,
 			);
 			path = Entry;
+			sourceTree = "<group>";
+		};
+		CADFD1412619BC2F00BC0C00 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CA0B65D82618E1760054D5B5 /* CoinUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CADFD1422619BC5900BC0C00 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CAD266E12614CDD800C1FBD8 /* Assets.xcassets */,
+				CA0B65D02618E0000054D5B5 /* Colors.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CADFD1492619BCA000BC0C00 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57BAB7CA2618793F002B7FB5 /* Coin.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CADFD14A2619BCA900BC0C00 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CAD2670E2614D1CC00C1FBD8 /* Entry */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,11 +337,13 @@
 			files = (
 				57BAB7CC2618793F002B7FB5 /* TouchBarItemView.swift in Sources */,
 				CA0B65C92618C5DB0054D5B5 /* TouchBarItemViewModel.swift in Sources */,
+				CA0B65D92618E1760054D5B5 /* CoinUtils.swift in Sources */,
 				CAD267102614D1D500C1FBD8 /* EntryViewModel.swift in Sources */,
 				CAD266DE2614CDD700C1FBD8 /* CrypTouchBarApp.swift in Sources */,
 				CAD267182614D1DD00C1FBD8 /* EntryView.swift in Sources */,
 				57BAB7CB2618793F002B7FB5 /* TouchBarView.swift in Sources */,
 				CA0B65C12618C3C20054D5B5 /* CoinService.swift in Sources */,
+				CA0B65D12618E0000054D5B5 /* Colors.swift in Sources */,
 				57BAB7CD2618793F002B7FB5 /* Coin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,7 +352,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAD266F12614CDD800C1FBD8 /* CrypTouchBarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +359,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAD266FC2614CDD800C1FBD8 /* CrypTouchBarUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

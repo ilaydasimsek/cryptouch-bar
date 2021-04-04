@@ -8,11 +8,18 @@ struct TouchBarItemView: View {
             HStack {
                 Spacer()
                 Text(coin.name)
+                    .foregroundColor(Colors.defaultTextColor)
+                    .font(.system(size: 12, weight: .heavy, design: .default))
+                    .padding(.leading, 4)
                 Text(coin.displayPrice)
+                    .foregroundColor(viewModel.priceStatus.color)
+                    .font(.system(size: 12, weight: .heavy, design: .default))
+                    .frame(maxWidth: .infinity)
                 Spacer()
             }
-            .padding([.top, .bottom], 3)
-            .border(Color("BackgroundColor"), width: 1)
+            .frame(maxHeight: .infinity)
+            .background(Colors.mainBackgroundColor)
+            .border(Colors.borderColor, width: 1)
             .cornerRadius(2)
             .padding(3.0)
         }
