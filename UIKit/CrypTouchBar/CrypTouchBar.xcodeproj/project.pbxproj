@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CABE4262261B27C400BBF685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE4261261B27C400BBF685 /* AppDelegate.swift */; };
+		CABE4264261B27C400BBF685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CABE4263261B27C400BBF685 /* Assets.xcassets */; };
+		CABE4267261B27C400BBF685 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CABE4265261B27C400BBF685 /* MainMenu.xib */; };
+		CABE4273261B27C400BBF685 /* CrypTouchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE4272261B27C400BBF685 /* CrypTouchBarTests.swift */; };
+		CABE427E261B27C400BBF685 /* CrypTouchBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE427D261B27C400BBF685 /* CrypTouchBarUITests.swift */; };
+		CABE428F261B29E000BBF685 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CABE428E261B29E000BBF685 /* MainView.xib */; };
+		CABE4295261B2A7700BBF685 /* NSView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE4294261B2A7700BBF685 /* NSView+Nib.swift */; };
+		CABE42AC261B2AED00BBF685 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE42AB261B2AED00BBF685 /* MainViewController.swift */; };
+		CABE42BA261B2DF700BBF685 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE42B9261B2DF700BBF685 /* MainView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CABE426F261B27C400BBF685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CABE4256261B27C400BBF685 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CABE425D261B27C400BBF685;
+			remoteInfo = CrypTouchBar;
+		};
+		CABE427A261B27C400BBF685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CABE4256261B27C400BBF685 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CABE425D261B27C400BBF685;
+			remoteInfo = CrypTouchBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CABE425E261B27C400BBF685 /* CrypTouchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrypTouchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CABE4261261B27C400BBF685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CABE4263261B27C400BBF685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CABE4266261B27C400BBF685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CABE4268261B27C400BBF685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CABE4269261B27C400BBF685 /* CrypTouchBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrypTouchBar.entitlements; sourceTree = "<group>"; };
+		CABE426E261B27C400BBF685 /* CrypTouchBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrypTouchBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CABE4272261B27C400BBF685 /* CrypTouchBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypTouchBarTests.swift; sourceTree = "<group>"; };
+		CABE4274261B27C400BBF685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CABE4279261B27C400BBF685 /* CrypTouchBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrypTouchBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CABE427D261B27C400BBF685 /* CrypTouchBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypTouchBarUITests.swift; sourceTree = "<group>"; };
+		CABE427F261B27C400BBF685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CABE428E261B29E000BBF685 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		CABE4294261B2A7700BBF685 /* NSView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+Nib.swift"; sourceTree = "<group>"; };
+		CABE42AB261B2AED00BBF685 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CABE42B9261B2DF700BBF685 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CABE425B261B27C400BBF685 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CABE426B261B27C400BBF685 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CABE4276261B27C400BBF685 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CABE4255261B27C400BBF685 = {
+			isa = PBXGroup;
+			children = (
+				CABE4260261B27C400BBF685 /* CrypTouchBar */,
+				CABE4271261B27C400BBF685 /* CrypTouchBarTests */,
+				CABE427C261B27C400BBF685 /* CrypTouchBarUITests */,
+				CABE425F261B27C400BBF685 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CABE425F261B27C400BBF685 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CABE425E261B27C400BBF685 /* CrypTouchBar.app */,
+				CABE426E261B27C400BBF685 /* CrypTouchBarTests.xctest */,
+				CABE4279261B27C400BBF685 /* CrypTouchBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CABE4260261B27C400BBF685 /* CrypTouchBar */ = {
+			isa = PBXGroup;
+			children = (
+				CABE42A1261B2ACA00BBF685 /* Activities */,
+				CABE4293261B2A6E00BBF685 /* Common */,
+				CABE4261261B27C400BBF685 /* AppDelegate.swift */,
+				CABE4263261B27C400BBF685 /* Assets.xcassets */,
+				CABE4265261B27C400BBF685 /* MainMenu.xib */,
+				CABE4268261B27C400BBF685 /* Info.plist */,
+				CABE4269261B27C400BBF685 /* CrypTouchBar.entitlements */,
+			);
+			path = CrypTouchBar;
+			sourceTree = "<group>";
+		};
+		CABE4271261B27C400BBF685 /* CrypTouchBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				CABE4272261B27C400BBF685 /* CrypTouchBarTests.swift */,
+				CABE4274261B27C400BBF685 /* Info.plist */,
+			);
+			path = CrypTouchBarTests;
+			sourceTree = "<group>";
+		};
+		CABE427C261B27C400BBF685 /* CrypTouchBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CABE427D261B27C400BBF685 /* CrypTouchBarUITests.swift */,
+				CABE427F261B27C400BBF685 /* Info.plist */,
+			);
+			path = CrypTouchBarUITests;
+			sourceTree = "<group>";
+		};
+		CABE4293261B2A6E00BBF685 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CABE4294261B2A7700BBF685 /* NSView+Nib.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CABE42A1261B2ACA00BBF685 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				CABE42A2261B2ACF00BBF685 /* Main */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		CABE42A2261B2ACF00BBF685 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CABE428E261B29E000BBF685 /* MainView.xib */,
+				CABE42AB261B2AED00BBF685 /* MainViewController.swift */,
+				CABE42B9261B2DF700BBF685 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CABE425D261B27C400BBF685 /* CrypTouchBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CABE4282261B27C400BBF685 /* Build configuration list for PBXNativeTarget "CrypTouchBar" */;
+			buildPhases = (
+				CABE425A261B27C400BBF685 /* Sources */,
+				CABE425B261B27C400BBF685 /* Frameworks */,
+				CABE425C261B27C400BBF685 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrypTouchBar;
+			productName = CrypTouchBar;
+			productReference = CABE425E261B27C400BBF685 /* CrypTouchBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CABE426D261B27C400BBF685 /* CrypTouchBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CABE4285261B27C400BBF685 /* Build configuration list for PBXNativeTarget "CrypTouchBarTests" */;
+			buildPhases = (
+				CABE426A261B27C400BBF685 /* Sources */,
+				CABE426B261B27C400BBF685 /* Frameworks */,
+				CABE426C261B27C400BBF685 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CABE4270261B27C400BBF685 /* PBXTargetDependency */,
+			);
+			name = CrypTouchBarTests;
+			productName = CrypTouchBarTests;
+			productReference = CABE426E261B27C400BBF685 /* CrypTouchBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CABE4278261B27C400BBF685 /* CrypTouchBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CABE4288261B27C400BBF685 /* Build configuration list for PBXNativeTarget "CrypTouchBarUITests" */;
+			buildPhases = (
+				CABE4275261B27C400BBF685 /* Sources */,
+				CABE4276261B27C400BBF685 /* Frameworks */,
+				CABE4277261B27C400BBF685 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CABE427B261B27C400BBF685 /* PBXTargetDependency */,
+			);
+			name = CrypTouchBarUITests;
+			productName = CrypTouchBarUITests;
+			productReference = CABE4279261B27C400BBF685 /* CrypTouchBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CABE4256261B27C400BBF685 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CABE425D261B27C400BBF685 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CABE426D261B27C400BBF685 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CABE425D261B27C400BBF685;
+					};
+					CABE4278261B27C400BBF685 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CABE425D261B27C400BBF685;
+					};
+				};
+			};
+			buildConfigurationList = CABE4259261B27C400BBF685 /* Build configuration list for PBXProject "CrypTouchBar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CABE4255261B27C400BBF685;
+			productRefGroup = CABE425F261B27C400BBF685 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CABE425D261B27C400BBF685 /* CrypTouchBar */,
+				CABE426D261B27C400BBF685 /* CrypTouchBarTests */,
+				CABE4278261B27C400BBF685 /* CrypTouchBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CABE425C261B27C400BBF685 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CABE4264261B27C400BBF685 /* Assets.xcassets in Resources */,
+				CABE4267261B27C400BBF685 /* MainMenu.xib in Resources */,
+				CABE428F261B29E000BBF685 /* MainView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CABE426C261B27C400BBF685 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CABE4277261B27C400BBF685 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CABE425A261B27C400BBF685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CABE4262261B27C400BBF685 /* AppDelegate.swift in Sources */,
+				CABE42BA261B2DF700BBF685 /* MainView.swift in Sources */,
+				CABE4295261B2A7700BBF685 /* NSView+Nib.swift in Sources */,
+				CABE42AC261B2AED00BBF685 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CABE426A261B27C400BBF685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CABE4273261B27C400BBF685 /* CrypTouchBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CABE4275261B27C400BBF685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CABE427E261B27C400BBF685 /* CrypTouchBarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CABE4270261B27C400BBF685 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CABE425D261B27C400BBF685 /* CrypTouchBar */;
+			targetProxy = CABE426F261B27C400BBF685 /* PBXContainerItemProxy */;
+		};
+		CABE427B261B27C400BBF685 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CABE425D261B27C400BBF685 /* CrypTouchBar */;
+			targetProxy = CABE427A261B27C400BBF685 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CABE4265261B27C400BBF685 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CABE4266261B27C400BBF685 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CABE4280261B27C400BBF685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CABE4281261B27C400BBF685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CABE4283261B27C400BBF685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CrypTouchBar/CrypTouchBar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CrypTouchBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CABE4284261B27C400BBF685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CrypTouchBar/CrypTouchBar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CrypTouchBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CABE4286261B27C400BBF685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CrypTouchBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrypTouchBar.app/Contents/MacOS/CrypTouchBar";
+			};
+			name = Debug;
+		};
+		CABE4287261B27C400BBF685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CrypTouchBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrypTouchBar.app/Contents/MacOS/CrypTouchBar";
+			};
+			name = Release;
+		};
+		CABE4289261B27C400BBF685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CrypTouchBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = CrypTouchBar;
+			};
+			name = Debug;
+		};
+		CABE428A261B27C400BBF685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CrypTouchBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = CrypTouchBar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CABE4259261B27C400BBF685 /* Build configuration list for PBXProject "CrypTouchBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CABE4280261B27C400BBF685 /* Debug */,
+				CABE4281261B27C400BBF685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CABE4282261B27C400BBF685 /* Build configuration list for PBXNativeTarget "CrypTouchBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CABE4283261B27C400BBF685 /* Debug */,
+				CABE4284261B27C400BBF685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CABE4285261B27C400BBF685 /* Build configuration list for PBXNativeTarget "CrypTouchBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CABE4286261B27C400BBF685 /* Debug */,
+				CABE4287261B27C400BBF685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CABE4288261B27C400BBF685 /* Build configuration list for PBXNativeTarget "CrypTouchBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CABE4289261B27C400BBF685 /* Debug */,
+				CABE428A261B27C400BBF685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CABE4256261B27C400BBF685 /* Project object */;
+}
