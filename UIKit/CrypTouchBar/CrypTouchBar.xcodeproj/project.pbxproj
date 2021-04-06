@@ -140,7 +140,7 @@
 		CABE4293261B2A6E00BBF685 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				CABE42C7261B32D200BBF685 /* Obj-C Bridges */,
+				CABE42C7261B32D200BBF685 /* Obj-C-Bridges */,
 				CABE4294261B2A7700BBF685 /* NSView+Nib.swift */,
 			);
 			path = Common;
@@ -174,13 +174,13 @@
 			path = "Touch Bar";
 			sourceTree = "<group>";
 		};
-		CABE42C7261B32D200BBF685 /* Obj-C Bridges */ = {
+		CABE42C7261B32D200BBF685 /* Obj-C-Bridges */ = {
 			isa = PBXGroup;
 			children = (
 				CABE42C9261B32D200BBF685 /* TouchBarPrivateApi.h */,
 				CABE42CD261B32D200BBF685 /* CrypTouchBarBridgingHeader.h */,
 			);
-			path = "Obj-C Bridges";
+			path = "Obj-C-Bridges";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,7 +495,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = CrypTouchBar/CBridge/CrypTouchBarBridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "CrypTouchBar/Common/Obj-C-Bridges/CrypTouchBarBridgingHeader.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -515,7 +515,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = CrypTouchBar/CBridge/CrypTouchBarBridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "CrypTouchBar/Common/Obj-C-Bridges/CrypTouchBarBridgingHeader.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
