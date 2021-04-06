@@ -16,6 +16,8 @@
 		CABE4295261B2A7700BBF685 /* NSView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE4294261B2A7700BBF685 /* NSView+Nib.swift */; };
 		CABE42AC261B2AED00BBF685 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE42AB261B2AED00BBF685 /* MainViewController.swift */; };
 		CABE42BA261B2DF700BBF685 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE42B9261B2DF700BBF685 /* MainView.swift */; };
+		CABE42C0261B2F2B00BBF685 /* TouchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE42BF261B2F2B00BBF685 /* TouchBarController.swift */; };
+		CACECCD3261C7C1000154523 /* TouchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACECCD2261C7C1000154523 /* TouchBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,10 @@
 		CABE4294261B2A7700BBF685 /* NSView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+Nib.swift"; sourceTree = "<group>"; };
 		CABE42AB261B2AED00BBF685 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CABE42B9261B2DF700BBF685 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CABE42BF261B2F2B00BBF685 /* TouchBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarController.swift; sourceTree = "<group>"; };
+		CABE42C9261B32D200BBF685 /* TouchBarPrivateApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchBarPrivateApi.h; sourceTree = "<group>"; };
+		CABE42CD261B32D200BBF685 /* CrypTouchBarBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrypTouchBarBridgingHeader.h; sourceTree = "<group>"; };
+		CACECCD2261C7C1000154523 /* TouchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,7 @@
 		CABE4293261B2A6E00BBF685 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CABE42C7261B32D200BBF685 /* Obj-C Bridges */,
 				CABE4294261B2A7700BBF685 /* NSView+Nib.swift */,
 			);
 			path = Common;
@@ -142,6 +149,7 @@
 		CABE42A1261B2ACA00BBF685 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
+				CABE42BE261B2F2000BBF685 /* Touch Bar */,
 				CABE42A2261B2ACF00BBF685 /* Main */,
 			);
 			path = Activities;
@@ -155,6 +163,24 @@
 				CABE42B9261B2DF700BBF685 /* MainView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		CABE42BE261B2F2000BBF685 /* Touch Bar */ = {
+			isa = PBXGroup;
+			children = (
+				CABE42BF261B2F2B00BBF685 /* TouchBarController.swift */,
+				CACECCD2261C7C1000154523 /* TouchBarView.swift */,
+			);
+			path = "Touch Bar";
+			sourceTree = "<group>";
+		};
+		CABE42C7261B32D200BBF685 /* Obj-C Bridges */ = {
+			isa = PBXGroup;
+			children = (
+				CABE42C9261B32D200BBF685 /* TouchBarPrivateApi.h */,
+				CABE42CD261B32D200BBF685 /* CrypTouchBarBridgingHeader.h */,
+			);
+			path = "Obj-C Bridges";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,10 +313,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CACECCD3261C7C1000154523 /* TouchBarView.swift in Sources */,
 				CABE4262261B27C400BBF685 /* AppDelegate.swift in Sources */,
 				CABE42BA261B2DF700BBF685 /* MainView.swift in Sources */,
 				CABE4295261B2A7700BBF685 /* NSView+Nib.swift in Sources */,
 				CABE42AC261B2AED00BBF685 /* MainViewController.swift in Sources */,
+				CABE42C0261B2F2B00BBF685 /* TouchBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -443,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -467,6 +495,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CrypTouchBar/CBridge/CrypTouchBarBridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -486,6 +515,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilaydasimsek.CrypTouchBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CrypTouchBar/CBridge/CrypTouchBarBridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
