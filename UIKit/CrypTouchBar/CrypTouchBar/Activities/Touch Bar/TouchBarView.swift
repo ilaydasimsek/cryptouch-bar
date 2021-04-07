@@ -1,6 +1,8 @@
 class TouchBarView: NSCustomTouchBarItem {
+    let items: [NSTouchBarItem]
 
     init(identifier: NSTouchBarItem.Identifier, items: [NSTouchBarItem]) {
+        self.items = items
         super.init(identifier: identifier)
         let views = items.compactMap { $0.view }
         view = createBaseStackView(with: views)
@@ -11,8 +13,7 @@ class TouchBarView: NSCustomTouchBarItem {
     }
 
     private func createBaseStackView(with views: [NSView]) -> NSStackView {
-        let stackView = EqualWidthChildStackView(views: views,
-                                                 stackViewSize: NSSize(width: 600, height: 30))
+        let stackView = EqualWidthChildStackView(equalWidthViews: views)
         stackView.spacing = 8
         stackView.orientation = .horizontal
         return stackView

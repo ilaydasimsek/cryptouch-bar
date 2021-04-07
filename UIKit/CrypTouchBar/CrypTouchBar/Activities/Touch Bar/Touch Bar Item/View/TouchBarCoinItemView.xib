@@ -8,6 +8,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="TouchBarCoinItemController" customModule="CrypTouchBar" customModuleProvider="target">
             <connections>
+                <outlet property="nameLabel" destination="sgy-oq-gp3" id="uzM-xP-zPX"/>
+                <outlet property="priceLabel" destination="9bJ-aT-wyz" id="Znf-DB-TVa"/>
                 <outlet property="view" destination="c22-O7-iKe" id="zes-EX-HEh"/>
             </connections>
         </customObject>
@@ -18,10 +20,10 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H8D-3l-Y2v">
-                    <rect key="frame" x="8" y="0.0" width="464" height="24"/>
+                    <rect key="frame" x="154" y="0.0" width="172" height="24"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sgy-oq-gp3">
-                            <rect key="frame" x="-2" y="4" width="185" height="16"/>
+                            <rect key="frame" x="-2" y="4" width="69" height="16"/>
                             <textFieldCell key="cell" lineBreakMode="clipping" title="BTC/USDT" id="bWP-wP-KrV">
                                 <font key="font" usesAppearanceFont="YES"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -29,7 +31,7 @@
                             </textFieldCell>
                         </textField>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9bJ-aT-wyz">
-                            <rect key="frame" x="187" y="4" width="279" height="16"/>
+                            <rect key="frame" x="71" y="4" width="103" height="16"/>
                             <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="56000" id="B4e-MJ-trp">
                                 <font key="font" usesAppearanceFont="YES"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -57,8 +59,9 @@
                 </stackView>
             </subviews>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="H8D-3l-Y2v" secondAttribute="trailing" constant="8" id="Gvo-Nm-Rlf"/>
-                <constraint firstItem="H8D-3l-Y2v" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="8" id="bxW-iK-7va"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="H8D-3l-Y2v" secondAttribute="trailing" constant="8" id="Gvo-Nm-Rlf"/>
+                <constraint firstItem="H8D-3l-Y2v" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c22-O7-iKe" secondAttribute="leading" constant="8" id="bxW-iK-7va"/>
+                <constraint firstItem="H8D-3l-Y2v" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="q56-R3-RmN"/>
                 <constraint firstItem="H8D-3l-Y2v" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="rUb-PW-vQS"/>
                 <constraint firstAttribute="bottom" secondItem="H8D-3l-Y2v" secondAttribute="bottom" id="zh9-fH-uiG"/>
             </constraints>

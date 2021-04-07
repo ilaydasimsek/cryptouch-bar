@@ -1,11 +1,10 @@
 import Cocoa
 
-class EqualWidthChildStackView: NSStackView {
+final class EqualWidthChildStackView: NSStackView {
 
-    convenience init(views: [NSView], stackViewSize: NSSize) {
-        self.init(views: views)
-        self.setEqualWidthConstraints(for: views)
-        self.setViewConstraints(size: stackViewSize)
+    convenience init(equalWidthViews: [NSView]) {
+        self.init(views: equalWidthViews)
+        self.setEqualWidthConstraints(for: equalWidthViews)
     }
     
     private func setEqualWidthConstraints(for views: [NSView]) {
@@ -20,12 +19,5 @@ class EqualWidthChildStackView: NSStackView {
                                constant: 0)
         }
         NSLayoutConstraint.activate(contraints)
-    }
-
-    private func setViewConstraints(size: NSSize) {
-        NSLayoutConstraint.activate([
-            self.widthAnchor.constraint(equalToConstant: size.width),
-            self.heightAnchor.constraint(equalToConstant: size.height)
-        ])
     }
 }
