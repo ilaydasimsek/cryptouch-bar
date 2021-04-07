@@ -49,6 +49,9 @@ private extension TouchBarController {
             self.createCoinItem(withSymbol: "ETHBTC"),
             self.createCoinItem(withSymbol: "IOTXBTC"),
             self.createCoinItem(withSymbol: "TVKBTC"),
+            self.createCoinItem(withSymbol: "ONTBTC"),
+            self.createCoinItem(withSymbol: "NEOBTC"),
+            self.createCoinItem(withSymbol: "USDTBTC"),
         ]
     }
 
