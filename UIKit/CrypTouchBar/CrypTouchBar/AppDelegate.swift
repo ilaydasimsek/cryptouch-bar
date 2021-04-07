@@ -17,7 +17,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         window.contentViewController = MainViewController()
-        NSApplication.shared.isAutomaticCustomizeTouchBarMenuItemEnabled = true
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA457FE5261DD60D00B50679 /* EqualWidthChildStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA457FE4261DD60D00B50679 /* EqualWidthChildStackView.swift */; };
+		CA68A334261C8869008E17C9 /* TouchBarCoinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA68A333261C8869008E17C9 /* TouchBarCoinItem.swift */; };
+		CA68A34A261C8A3A008E17C9 /* TouchBarItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA68A349261C8A3A008E17C9 /* TouchBarItemController.swift */; };
 		CABE4262261B27C400BBF685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE4261261B27C400BBF685 /* AppDelegate.swift */; };
 		CABE4264261B27C400BBF685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CABE4263261B27C400BBF685 /* Assets.xcassets */; };
 		CABE4267261B27C400BBF685 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CABE4265261B27C400BBF685 /* MainMenu.xib */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA457FE4261DD60D00B50679 /* EqualWidthChildStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualWidthChildStackView.swift; sourceTree = "<group>"; };
+		CA68A333261C8869008E17C9 /* TouchBarCoinItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarCoinItem.swift; sourceTree = "<group>"; };
+		CA68A349261C8A3A008E17C9 /* TouchBarItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarItemController.swift; sourceTree = "<group>"; };
 		CABE425E261B27C400BBF685 /* CrypTouchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrypTouchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CABE4261261B27C400BBF685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CABE4263261B27C400BBF685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA68A338261C89CD008E17C9 /* Touch Bar Item */ = {
+			isa = PBXGroup;
+			children = (
+				CA68A333261C8869008E17C9 /* TouchBarCoinItem.swift */,
+				CA68A349261C8A3A008E17C9 /* TouchBarItemController.swift */,
+			);
+			path = "Touch Bar Item";
+			sourceTree = "<group>";
+		};
 		CABE4255261B27C400BBF685 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +157,7 @@
 			children = (
 				CABE42C7261B32D200BBF685 /* Obj-C-Bridges */,
 				CABE4294261B2A7700BBF685 /* NSView+Nib.swift */,
+				CA457FE4261DD60D00B50679 /* EqualWidthChildStackView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -168,6 +184,7 @@
 		CABE42BE261B2F2000BBF685 /* Touch Bar */ = {
 			isa = PBXGroup;
 			children = (
+				CA68A338261C89CD008E17C9 /* Touch Bar Item */,
 				CABE42BF261B2F2B00BBF685 /* TouchBarController.swift */,
 				CACECCD2261C7C1000154523 /* TouchBarView.swift */,
 			);
@@ -314,9 +331,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CACECCD3261C7C1000154523 /* TouchBarView.swift in Sources */,
+				CA457FE5261DD60D00B50679 /* EqualWidthChildStackView.swift in Sources */,
 				CABE4262261B27C400BBF685 /* AppDelegate.swift in Sources */,
 				CABE42BA261B2DF700BBF685 /* MainView.swift in Sources */,
 				CABE4295261B2A7700BBF685 /* NSView+Nib.swift in Sources */,
+				CA68A334261C8869008E17C9 /* TouchBarCoinItem.swift in Sources */,
+				CA68A34A261C8A3A008E17C9 /* TouchBarItemController.swift in Sources */,
 				CABE42AC261B2AED00BBF685 /* MainViewController.swift in Sources */,
 				CABE42C0261B2F2B00BBF685 /* TouchBarController.swift in Sources */,
 			);

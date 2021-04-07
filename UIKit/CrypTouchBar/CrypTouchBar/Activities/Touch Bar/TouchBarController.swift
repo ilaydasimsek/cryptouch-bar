@@ -3,14 +3,13 @@ import Cocoa
 class TouchBarController: NSObject {
     var touchBarViewId = NSTouchBarItem.Identifier("com.cryptouchbar.coinbar.".appending(UUID().uuidString))
     var touchBarMainItemId = NSTouchBarItem.Identifier("com.cryptouchbar.coinbar")
-    var touchBarView: TouchBarView
+    var touchBarView: TouchBarView?
     var touchBar: NSTouchBar = NSTouchBar()
 
     override init() {
-        touchBarView = TouchBarView(identifier: touchBarViewId, items: [])
         super.init()
-
         prepareVisibilityHandlers()
+        prepareTouchBar()
     }
 }
 
@@ -20,6 +19,13 @@ private extension TouchBarController {
         NSWorkspace.shared.notificationCenter.addObserver(self, selector: #selector(activeApplicationChanged), name: NSWorkspace.didLaunchApplicationNotification, object: nil)
         NSWorkspace.shared.notificationCenter.addObserver(self, selector: #selector(activeApplicationChanged), name: NSWorkspace.didTerminateApplicationNotification, object: nil)
         NSWorkspace.shared.notificationCenter.addObserver(self, selector: #selector(activeApplicationChanged), name: NSWorkspace.didActivateApplicationNotification, object: nil)
+    }
+
+    func prepareTouchBar() {
+        touchBar.delegate = self
+        touchBar.defaultItemIdentifiers = [touchBarViewId]
+        touchBarView = TouchBarView(identifier: touchBarViewId,
+                                    items: createTouchBarChildrenItems())
     }
 
     /**
@@ -35,8 +41,30 @@ private extension TouchBarController {
     }
 }
 
-extension TouchBarController: NSTouchBarDelegate {
+// MARK: - View creation
+private extension TouchBarController {
 
+    func createTouchBarChildrenItems() -> [NSTouchBarItem] {
+        return [
+            self.createCoinItem(),
+            self.createCoinItem(),
+            self.createCoinItem(),
+        ]
+    }
+
+    func createCoinItem() -> TouchBarCoinItem {
+        let itemId = createCoinItemId()
+        return TouchBarCoinItem(identifier: itemId)
+    }
+
+    func createCoinItemId() -> NSTouchBarItem.Identifier {
+        let currentTime = Date().timeIntervalSince1970
+        let type = TouchBarCoinItem.self
+        return NSTouchBarItem.Identifier("\(type)_\(currentTime)")
+    }
+}
+
+extension TouchBarController: NSTouchBarDelegate {
 
     func touchBar(_: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItem.Identifier) -> NSTouchBarItem? {
         guard identifier == touchBarViewId else { return nil }
