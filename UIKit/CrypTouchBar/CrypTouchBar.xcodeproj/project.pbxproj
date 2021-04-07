@@ -25,7 +25,6 @@
 		CABE428F261B29E000BBF685 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CABE428E261B29E000BBF685 /* MainView.xib */; };
 		CABE4295261B2A7700BBF685 /* NSView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE4294261B2A7700BBF685 /* NSView+Nib.swift */; };
 		CABE42AC261B2AED00BBF685 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE42AB261B2AED00BBF685 /* MainViewController.swift */; };
-		CABE42BA261B2DF700BBF685 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE42B9261B2DF700BBF685 /* MainView.swift */; };
 		CABE42C0261B2F2B00BBF685 /* TouchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE42BF261B2F2B00BBF685 /* TouchBarController.swift */; };
 		CACECCD3261C7C1000154523 /* TouchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACECCD2261C7C1000154523 /* TouchBarView.swift */; };
 /* End PBXBuildFile section */
@@ -72,7 +71,6 @@
 		CABE428E261B29E000BBF685 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		CABE4294261B2A7700BBF685 /* NSView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+Nib.swift"; sourceTree = "<group>"; };
 		CABE42AB261B2AED00BBF685 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		CABE42B9261B2DF700BBF685 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CABE42BF261B2F2B00BBF685 /* TouchBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarController.swift; sourceTree = "<group>"; };
 		CABE42C9261B32D200BBF685 /* TouchBarPrivateApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchBarPrivateApi.h; sourceTree = "<group>"; };
 		CABE42CD261B32D200BBF685 /* CrypTouchBarBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrypTouchBarBridgingHeader.h; sourceTree = "<group>"; };
@@ -198,7 +196,6 @@
 			children = (
 				CAAFA228261DF51F004D9314 /* Resources */,
 				CAAFA213261DF3B3004D9314 /* Networking */,
-				CAAFA215261DF3B3004D9314 /* Utils */,
 				CABE42A1261B2ACA00BBF685 /* Activities */,
 				CABE4293261B2A6E00BBF685 /* Common */,
 				CABE4261261B27C400BBF685 /* AppDelegate.swift */,
@@ -230,6 +227,7 @@
 		CABE4293261B2A6E00BBF685 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CAAFA215261DF3B3004D9314 /* Utils */,
 				CAAFA237261E540B004D9314 /* Views */,
 				CAAFA236261E5400004D9314 /* Extensions */,
 				CABE42C7261B32D200BBF685 /* Obj-C-Bridges */,
@@ -251,7 +249,6 @@
 			children = (
 				CABE428E261B29E000BBF685 /* MainView.xib */,
 				CABE42AB261B2AED00BBF685 /* MainViewController.swift */,
-				CABE42B9261B2DF700BBF685 /* MainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -419,7 +416,6 @@
 				CAAFA217261DF3B3004D9314 /* CoinService.swift in Sources */,
 				CA457FE5261DD60D00B50679 /* HorizontalScrollableStackView.swift in Sources */,
 				CABE4262261B27C400BBF685 /* AppDelegate.swift in Sources */,
-				CABE42BA261B2DF700BBF685 /* MainView.swift in Sources */,
 				CAAFA224261DF4A6004D9314 /* Coin.swift in Sources */,
 				CABE4295261B2A7700BBF685 /* NSView+Nib.swift in Sources */,
 				CAAFA22A261DF52C004D9314 /* Colors.swift in Sources */,
