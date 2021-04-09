@@ -6,8 +6,25 @@ class TouchBarCoinItemController: NSViewController {
 
     let coinService = CoinService()
     let symbol: String
-    var coin: Coin?
+    var coin: DisplayCoin?
     var priceStatus: CoinUtils.PriceStatus = .stable
+
+    var displayName: String {
+        if let baseAsset = coin?.coinDetails?.baseAsset, let quoteAsset = coin?.coinDetails?.quoteAsset {
+            return "\(baseAsset)/\(quoteAsset)"
+        } else {
+            return symbol
+        }
+    }
+
+    var displayPrice: String {
+        let number = NSNumber(value: Double(coin?.price ?? "") ?? 0.0)
+        return "\(number.decimalValue)"
+    }
+
+    var priceAmount: Double? {
+        return Double(coin?.price ?? "")
+    }
 
     override var nibName: NSNib.Name? {
         return "TouchBarCoinItemView"
@@ -36,7 +53,7 @@ class TouchBarCoinItemController: NSViewController {
         coinService.getCurrentPrice(symbol: symbol, completion: { [weak self] newCoin in
             guard let self = self else { return }
             DispatchQueue.main.async {
-                if let currentPrice = self.coin?.priceAmount, let newPrice = newCoin.priceAmount {
+                if let currentPrice = Double(self.coin?.price ?? ""), let newPrice = Double(newCoin.price) {
                     self.priceStatus =
                         CoinUtils.getPriceStatus(previousPrice: currentPrice, currentPrice: newPrice)
                 }
@@ -52,8 +69,8 @@ class TouchBarCoinItemController: NSViewController {
     func resetupView() {
         guard let coin = coin else { return }
         self.view.isHidden = false
-        nameLabel.stringValue = coin.name
-        priceLabel.stringValue = coin.displayPrice
+        nameLabel.stringValue = self.displayName
+        priceLabel.stringValue = self.displayPrice
         priceLabel.textColor = priceStatus.color
         nameLabel.textColor = Colors.defaultTextColor
         self.view.layoutSubtreeIfNeeded()

@@ -46,12 +46,9 @@ private extension TouchBarController {
 
     func createTouchBarChildrenItems() -> [NSTouchBarItem] {
         return [
-            self.createCoinItem(withSymbol: "ETHBTC"),
-            self.createCoinItem(withSymbol: "IOTXBTC"),
+            self.createCoinItem(withSymbol: "LINABTC"),
             self.createCoinItem(withSymbol: "TVKBTC"),
-            self.createCoinItem(withSymbol: "ONTBTC"),
-            self.createCoinItem(withSymbol: "NEOBTC"),
-            self.createCoinItem(withSymbol: "USDTBTC"),
+            self.createCoinItem(withSymbol: "BTCUSDT"),
         ]
     }
 

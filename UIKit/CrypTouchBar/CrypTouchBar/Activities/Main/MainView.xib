@@ -8,6 +8,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainViewController" customModule="CrypTouchBar" customModuleProvider="target">
             <connections>
+                <outlet property="searchField" destination="Cdv-DX-VLS" id="aog-WV-q5C"/>
+                <outlet property="tableViewContainer" destination="70D-eh-7fT" id="Rtj-cd-Od4"/>
                 <outlet property="view" destination="c22-O7-iKe" id="pyj-TV-KA5"/>
             </connections>
         </customObject>
@@ -17,18 +19,26 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DF0-IQ-Nth">
-                    <rect key="frame" x="201" y="128" width="79" height="16"/>
-                    <textFieldCell key="cell" lineBreakMode="clipping" title="Main Screen" id="koj-fn-2jh" userLabel="Main Screen">
-                        <font key="font" usesAppearanceFont="YES"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdv-DX-VLS">
+                    <rect key="frame" x="0.0" y="250" width="480" height="22"/>
+                    <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="k8V-ga-ff7">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
+                    </searchFieldCell>
+                </searchField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="70D-eh-7fT">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="250"/>
+                </customView>
             </subviews>
             <constraints>
-                <constraint firstItem="DF0-IQ-Nth" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="M67-wo-Gx8"/>
-                <constraint firstItem="DF0-IQ-Nth" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="MHf-hF-xnP"/>
+                <constraint firstAttribute="bottom" secondItem="70D-eh-7fT" secondAttribute="bottom" id="DqW-NT-Gnr"/>
+                <constraint firstItem="70D-eh-7fT" firstAttribute="top" secondItem="Cdv-DX-VLS" secondAttribute="bottom" id="HhQ-vr-7og"/>
+                <constraint firstAttribute="trailing" secondItem="70D-eh-7fT" secondAttribute="trailing" id="WnV-ku-4V2"/>
+                <constraint firstItem="70D-eh-7fT" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="Zn6-aq-ZUd"/>
+                <constraint firstAttribute="trailing" secondItem="Cdv-DX-VLS" secondAttribute="trailing" id="aSz-AG-IWf"/>
+                <constraint firstItem="Cdv-DX-VLS" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="swG-ZB-wG3"/>
+                <constraint firstItem="Cdv-DX-VLS" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="tUv-ix-M3I"/>
             </constraints>
             <point key="canvasLocation" x="-100" y="120"/>
         </customView>

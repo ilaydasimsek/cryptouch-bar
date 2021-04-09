@@ -7,10 +7,11 @@ enum Response {
 }
 
 class CoinService {
-    let currentPriceApi = "https://api.binance.com/api/v3/ticker/price"
+    let currentPriceApi = "https://api.binance.com/api/v3"
     
     func getAllSymbols(completion: @escaping ((BinanceSymbolsResponse) -> Void), onError: ((String) -> Void)? = nil) {
-        sendGetRequest(forApi: currentPriceApi, completion: { response in
+        let api = "\(currentPriceApi)/exchangeInfo"
+        sendGetRequest(forApi: api, completion: { response in
             switch response {
             case .success(let data):
                 guard let jsonData = try? JSON(data: data),
@@ -27,14 +28,14 @@ class CoinService {
     }
 
     func getCurrentPrice(symbol: String,
-                         completion: ((Coin) -> Void)?,
+                         completion: ((DisplayCoin) -> Void)?,
                          onError: ((String) -> Void)? = nil) {
-        let api = "\(currentPriceApi)?symbol=\(symbol)"
+        let api = "\(currentPriceApi)/ticker/price?symbol=\(symbol)"
         sendGetRequest(forApi: api, completion: { response in
             switch response {
             case .success(let data):
                 guard let jsonData = try? JSON(data:  data),
-                      let response = Coin.decode(fromJson: jsonData) else {
+                      let response = DisplayCoin.decode(fromJson: jsonData) else {
                     onError?("Something went wrong")
                     return
                 }

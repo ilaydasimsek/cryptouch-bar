@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <tableCellView id="iVy-3c-2T6" customClass="CoinDescriptionCellView" customModule="CrypTouchBar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="95"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qpH-Zg-mfd">
+                    <rect key="frame" x="3" y="78" width="17.5" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="star" catalog="system" id="C4i-im-P9t"/>
+                    <color key="contentTintColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                </imageView>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uA1-BY-4Rm">
+                    <rect key="frame" x="25" y="78" width="299" height="17"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="W5j-Lz-ceR">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <connections>
+                <outlet property="coinName" destination="uA1-BY-4Rm" id="nyS-hu-78k"/>
+                <outlet property="imageView" destination="qpH-Zg-mfd" id="ymB-aF-HmC"/>
+                <outlet property="statusIcon" destination="qpH-Zg-mfd" id="bcu-ob-NNk"/>
+                <outlet property="textField" destination="uA1-BY-4Rm" id="ZDP-La-BlV"/>
+            </connections>
+            <point key="canvasLocation" x="-29" y="-15.5"/>
+        </tableCellView>
+    </objects>
+    <resources>
+        <image name="star" catalog="system" width="17" height="16"/>
+    </resources>
+</document>
