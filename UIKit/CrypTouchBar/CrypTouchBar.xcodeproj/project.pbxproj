@@ -30,6 +30,7 @@
 		CABE4295261B2A7700BBF685 /* NSView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE4294261B2A7700BBF685 /* NSView+Nib.swift */; };
 		CABE42AC261B2AED00BBF685 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE42AB261B2AED00BBF685 /* MainViewController.swift */; };
 		CABE42C0261B2F2B00BBF685 /* TouchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE42BF261B2F2B00BBF685 /* TouchBarController.swift */; };
+		CAC30B3C2622140200755F12 /* CoinPreferenceStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC30B3B2622140200755F12 /* CoinPreferenceStorageService.swift */; };
 		CACECCD3261C7C1000154523 /* TouchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACECCD2261C7C1000154523 /* TouchBarView.swift */; };
 		CAF774F12620AD9900F24B51 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF774F02620AD9900F24B51 /* Context.swift */; };
 /* End PBXBuildFile section */
@@ -83,6 +84,7 @@
 		CABE42BF261B2F2B00BBF685 /* TouchBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarController.swift; sourceTree = "<group>"; };
 		CABE42C9261B32D200BBF685 /* TouchBarPrivateApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchBarPrivateApi.h; sourceTree = "<group>"; };
 		CABE42CD261B32D200BBF685 /* CrypTouchBarBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrypTouchBarBridgingHeader.h; sourceTree = "<group>"; };
+		CAC30B3B2622140200755F12 /* CoinPreferenceStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinPreferenceStorageService.swift; sourceTree = "<group>"; };
 		CACECCD2261C7C1000154523 /* TouchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarView.swift; sourceTree = "<group>"; };
 		CAF774F02620AD9900F24B51 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -261,6 +263,7 @@
 				CAAFA236261E5400004D9314 /* Extensions */,
 				CABE42C7261B32D200BBF685 /* Obj-C-Bridges */,
 				CAF774F02620AD9900F24B51 /* Context.swift */,
+				CAC30B3B2622140200755F12 /* CoinPreferenceStorageService.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				CAAFA218261DF3B3004D9314 /* CoinUtils.swift in Sources */,
 				CAF774F12620AD9900F24B51 /* Context.swift in Sources */,
 				CABE42AC261B2AED00BBF685 /* MainViewController.swift in Sources */,
+				CAC30B3C2622140200755F12 /* CoinPreferenceStorageService.swift in Sources */,
 				CABE42C0261B2F2B00BBF685 /* TouchBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

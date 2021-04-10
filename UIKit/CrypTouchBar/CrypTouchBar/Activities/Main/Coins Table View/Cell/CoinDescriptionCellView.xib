@@ -13,15 +13,21 @@
             <rect key="frame" x="0.0" y="0.0" width="324" height="95"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qpH-Zg-mfd">
-                    <rect key="frame" x="3" y="78" width="17.5" height="18"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="star" catalog="system" id="C4i-im-P9t"/>
-                    <color key="contentTintColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
-                </imageView>
-                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uA1-BY-4Rm">
-                    <rect key="frame" x="25" y="78" width="299" height="17"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="2AP-y9-p41">
+                    <rect key="frame" x="3" y="0.0" width="92" height="92"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2AP-y9-p41" secondAttribute="height" multiplier="1:1" id="yYq-uA-9wF"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="bKu-pI-NFq">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onFavouriteButtonClick:" target="iVy-3c-2T6" id="AO8-mD-MVW"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uA1-BY-4Rm">
+                    <rect key="frame" x="96" y="40" width="96" height="16"/>
                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="W5j-Lz-ceR">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -29,16 +35,19 @@
                     </textFieldCell>
                 </textField>
             </subviews>
+            <constraints>
+                <constraint firstItem="uA1-BY-4Rm" firstAttribute="centerY" secondItem="iVy-3c-2T6" secondAttribute="centerY" id="1mg-1G-D7e"/>
+                <constraint firstItem="2AP-y9-p41" firstAttribute="leading" secondItem="iVy-3c-2T6" secondAttribute="leading" constant="3" id="3ut-2z-0i8"/>
+                <constraint firstItem="2AP-y9-p41" firstAttribute="top" secondItem="iVy-3c-2T6" secondAttribute="top" constant="3" id="Df1-qy-N18"/>
+                <constraint firstItem="uA1-BY-4Rm" firstAttribute="leading" secondItem="2AP-y9-p41" secondAttribute="trailing" constant="3" id="Ssb-hE-LyB"/>
+                <constraint firstAttribute="bottom" secondItem="2AP-y9-p41" secondAttribute="bottom" id="cks-Yl-BTX"/>
+            </constraints>
             <connections>
                 <outlet property="coinName" destination="uA1-BY-4Rm" id="nyS-hu-78k"/>
-                <outlet property="imageView" destination="qpH-Zg-mfd" id="ymB-aF-HmC"/>
-                <outlet property="statusIcon" destination="qpH-Zg-mfd" id="bcu-ob-NNk"/>
+                <outlet property="favouriteButton" destination="2AP-y9-p41" id="S6p-5J-C4m"/>
                 <outlet property="textField" destination="uA1-BY-4Rm" id="ZDP-La-BlV"/>
             </connections>
             <point key="canvasLocation" x="-29" y="-15.5"/>
         </tableCellView>
     </objects>
-    <resources>
-        <image name="star" catalog="system" width="17" height="16"/>
-    </resources>
 </document>

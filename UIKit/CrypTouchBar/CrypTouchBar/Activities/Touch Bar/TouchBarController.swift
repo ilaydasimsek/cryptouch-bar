@@ -8,12 +8,17 @@ class TouchBarController: NSObject {
 
     override init() {
         super.init()
+        prepareListeners()
         prepareVisibilityHandlers()
         prepareTouchBar()
     }
 }
 
 private extension TouchBarController {
+
+    func prepareListeners() {
+        NotificationCenter.default.addObserver(self, selector: #selector(onSelectedCoinsChanged(_:)), name: .onFavoriteCoinsChanged, object: nil)
+    }
 
     func prepareVisibilityHandlers() {
         NSWorkspace.shared.notificationCenter.addObserver(self, selector: #selector(activeApplicationChanged), name: NSWorkspace.didLaunchApplicationNotification, object: nil)
@@ -39,17 +44,19 @@ private extension TouchBarController {
         NSTouchBar.presentSystemModalTouchBar(touchBar,
                                               systemTrayItemIdentifier: self.touchBarMainItemId)
     }
+
+    @objc func onSelectedCoinsChanged(_ notification: Notification) {
+        touchBarView?.refreshItems(createTouchBarChildrenItems())
+    }
 }
 
 // MARK: - View creation
 private extension TouchBarController {
 
     func createTouchBarChildrenItems() -> [NSTouchBarItem] {
-        return [
-            self.createCoinItem(withSymbol: "LINABTC"),
-            self.createCoinItem(withSymbol: "TVKBTC"),
-            self.createCoinItem(withSymbol: "BTCUSDT"),
-        ]
+        return CoinPreferenceStorageService.favoriteCoinSymbols.map({ symbol in
+            self.createCoinItem(withSymbol: symbol)
+        })
     }
 
     func createCoinItem(withSymbol symbol: String) -> TouchBarCoinItem {

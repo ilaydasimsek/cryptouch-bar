@@ -1,5 +1,5 @@
 class TouchBarView: NSCustomTouchBarItem {
-    let items: [NSTouchBarItem]
+    var items: [NSTouchBarItem]
 
     init(identifier: NSTouchBarItem.Identifier, items: [NSTouchBarItem]) {
         self.items = items
@@ -9,6 +9,11 @@ class TouchBarView: NSCustomTouchBarItem {
 
     required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    func refreshItems(_ items: [NSTouchBarItem]) {
+        self.items = items
+        self.setupView()
     }
 
     private func setupView() {
