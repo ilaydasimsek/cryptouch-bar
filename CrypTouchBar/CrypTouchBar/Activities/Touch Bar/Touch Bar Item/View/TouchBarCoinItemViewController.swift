@@ -5,20 +5,20 @@ class TouchBarCoinItemController: NSViewController {
     @IBOutlet weak var priceLabel: NSTextField!
 
     let coinService = CoinService()
-    let symbol: String
-    var coin: DisplayCoin?
+    var coinDetails: Coin
+    var displayCoin: DisplayCoin?
     var priceStatus: CoinUtils.PriceStatus = .stable
 
     var priceAmount: Double? {
-        return Double(coin?.price ?? "")
+        return Double(displayCoin?.price ?? "")
     }
 
     override var nibName: NSNib.Name? {
         return "TouchBarCoinItemView"
     }
 
-    init(symbol: String) {
-        self.symbol = symbol
+    init(coinDetails: Coin) {
+        self.coinDetails = coinDetails
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -37,14 +37,14 @@ class TouchBarCoinItemController: NSViewController {
     }
 
     func startFetch() {
-        coinService.getCurrentPrice(symbol: symbol, completion: { [weak self] newCoin in
+        coinService.getCurrentPrice(symbol: coinDetails.symbol, completion: { [weak self] newCoin in
             guard let self = self else { return }
             DispatchQueue.main.async {
-                if let currentPrice = Double(self.coin?.price ?? ""), let newPrice = Double(newCoin.price) {
+                if let currentPrice = Double(self.displayCoin?.price ?? ""), let newPrice = Double(newCoin.price) {
                     self.priceStatus =
                         CoinUtils.getPriceStatus(previousPrice: currentPrice, currentPrice: newPrice)
                 }
-                self.coin = newCoin
+                self.displayCoin = newCoin
                 self.resetupView()
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: { [weak self] in
@@ -55,8 +55,7 @@ class TouchBarCoinItemController: NSViewController {
 
     func resetupView() {
         self.view.isHidden = false
-        nameLabel.stringValue = self.coin?.coinDetails?.displayName ?? ""
-        priceLabel.stringValue = self.coin?.displayPrice ?? ""
+        priceLabel.stringValue = self.displayCoin?.displayPrice ?? ""
         priceLabel.textColor = priceStatus.color
         nameLabel.textColor = Colors.defaultTextColor
         self.view.layoutSubtreeIfNeeded()
@@ -72,8 +71,10 @@ private extension TouchBarCoinItemController {
         self.view.layer?.borderColor = Colors.borderColor.cgColor
         self.view.layer?.backgroundColor = Colors.mainBackgroundColor.cgColor
         self.view.isHidden = true
-        self.view.setWidth(toConstant: 185)
-        nameLabel.stringValue = ""
+        self.view.setWidth(toConstant: 190)
+        self.view.setHeight(toConstant: 30)
+        nameLabel.stringValue = self.coinDetails.displayName
+        nameLabel.font = NSFont.systemFont(ofSize: 13.5, weight: .semibold)
         priceLabel.stringValue = ""
     }
 }

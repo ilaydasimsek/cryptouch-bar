@@ -6,4 +6,10 @@ extension NSView {
             self.widthAnchor.constraint(equalToConstant: value)
         ])
     }
+
+    func setHeight(toConstant value: CGFloat) {
+        NSLayoutConstraint.activate([
+            self.heightAnchor.constraint(equalToConstant: value)
+        ])
+    }
 }
