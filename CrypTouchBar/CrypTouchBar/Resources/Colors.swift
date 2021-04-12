@@ -1,23 +1,31 @@
-import SwiftUI
+import Cocoa
 
 class Colors {
-    static var borderColor: Color {
-        return Color("BorderColor")
+    static var borderColor: NSColor {
+        return NSColor(named: "Secondary")!
     }
 
-    static var mainBackgroundColor: Color {
-        return Color("MainBackgroundColor")
+    static var mainBackgroundColor: NSColor {
+        return NSColor(named: "Primary")!
     }
 
-    static var greenTextColor: Color {
-        return Color("GreenTextColor")
+    static var greenTextColor: NSColor {
+        return NSColor(named: "NiagraGreen")!
     }
 
-    static var redTextColor: Color {
-        return Color("RedTextColor")
+    static var redTextColor: NSColor {
+        return NSColor(named: "MonzaRed")!
     }
 
-    static var defaultTextColor: Color {
-        return Color("DefaultTextColor")
+    static var defaultTextColor: NSColor {
+        return NSColor(named: "Ivory")!
+    }
+
+    static var defaultIconColor: NSColor {
+        return NSColor(named: "PaleGray")!
+    }
+
+    static var redIconColor: NSColor {
+        return NSColor(named: "MonzaRed")!
     }
 }
