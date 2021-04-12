@@ -8,8 +8,8 @@ class TouchBarController: NSObject {
     private var touchBarView: ScrollableTouchBarView?
     private var touchBarItems: [TouchBarCoinItem] = []
 
-    private var currentSymbols: [String] {
-        return CoinPreferenceStorageService.favoriteCoinSymbols
+    private var currentCoins: [Coin] {
+        return CoinPreferenceStorageService.favoriteCoins
     }
 
     override init() {
@@ -35,7 +35,7 @@ private extension TouchBarController {
     func prepareTouchBar() {
         touchBar.delegate = self
         touchBar.defaultItemIdentifiers = [touchBarViewId]
-        touchBarItems = createTouchBarChildrenItems(for: currentSymbols)
+        touchBarItems = createTouchBarChildrenItems(for: currentCoins)
         touchBarView = ScrollableTouchBarView(identifier: touchBarViewId,
                                     childViews: touchBarItems.views)
     }
@@ -53,13 +53,13 @@ private extension TouchBarController {
     }
 
     @objc func onSelectedCoinsChanged(_ notification: Notification) {
-        let visibleSymbols: [String] = self.touchBarItems.map { $0.symbol }
+        let visibleCoins: [Coin] = self.touchBarItems.map { $0.coin }
 
         let removedItems = self.touchBarItems.filter { item in
-            return !currentSymbols.contains(item.symbol)
+            return !currentCoins.contains(item.coin)
         }
         
-        let addedSymbols = currentSymbols.filter({ return !visibleSymbols.contains($0) })
+        let addedSymbols = currentCoins.filter({ return !visibleCoins.contains($0) })
         let newItems = self.createTouchBarChildrenItems(for: addedSymbols)
 
         self.touchBarItems.append(contentsOf: newItems)
@@ -72,14 +72,14 @@ private extension TouchBarController {
 // MARK: - View operations
 private extension TouchBarController {
 
-    func createTouchBarChildrenItems(for symbols: [String]) -> [TouchBarCoinItem] {
-        return symbols.map({ symbol in
-            self.createCoinItem(withSymbol: symbol)
+    func createTouchBarChildrenItems(for coins: [Coin]) -> [TouchBarCoinItem] {
+        return coins.map({ coin in
+            self.createCoinItem(withCoin: coin)
         })
     }
 
-    func createCoinItem(withSymbol symbol: String) -> TouchBarCoinItem {
-        return TouchBarCoinItem(symbol: symbol)
+    func createCoinItem(withCoin coin: Coin) -> TouchBarCoinItem {
+        return TouchBarCoinItem(coin: coin)
     }
 }
 

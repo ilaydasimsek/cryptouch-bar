@@ -2,12 +2,12 @@ import Cocoa
 
 class TouchBarCoinItem: NSCustomTouchBarItem
 {
-    let symbol: String
+    let coin: Coin
 
-    init(symbol: String) {
-        self.symbol = symbol
-        super.init(identifier: NSTouchBarItem.Identifier(symbol))
-        viewController = TouchBarCoinItemController(symbol: symbol)
+    init(coin: Coin) {
+        self.coin = coin
+        super.init(identifier: NSTouchBarItem.Identifier(coin.symbol))
+        viewController = TouchBarCoinItemController(symbol: coin.symbol)
     }
 
     required init?(coder _: NSCoder) {

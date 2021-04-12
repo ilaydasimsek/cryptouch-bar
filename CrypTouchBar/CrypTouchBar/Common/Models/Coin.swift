@@ -25,7 +25,7 @@ struct DisplayCoin: Decodable {
     }
 }
 
-struct Coin: Decodable {
+struct Coin: Decodable, Encodable, Equatable {
     let symbol: String
     let baseAsset: String?
     let quoteAsset: String?
@@ -49,6 +49,10 @@ struct Coin: Decodable {
             baseAsset: json["baseAsset"].string,
             quoteAsset: json["quoteAsset"].string
         )
+    }
+
+    static func == (lhs: Coin, rhs: Coin) -> Bool {
+        return lhs.symbol == rhs.symbol
     }
 }
 
