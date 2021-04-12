@@ -50,4 +50,8 @@ extension CoinsTableViewController: NSTableViewDelegate {
         }
         return nil
       }
+    
+    func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
+        return false
+    }
   }
