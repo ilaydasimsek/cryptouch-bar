@@ -4,15 +4,14 @@ class CoinDescriptionCellView: NSTableCellView {
     @IBOutlet weak var coinName: NSTextField!
     @IBOutlet weak var favouriteButton: NSButton!
 
-    let selectedItemIcon = NSImage(imageLiteralResourceName: "starFilledIcon")
-    let unselectedItemIcon = NSImage(imageLiteralResourceName: "starEmptyIcon")
+    let selectedItemIcon = NSImage(imageLiteralResourceName: "heartFilledIcon")
+    let unselectedItemIcon = NSImage(imageLiteralResourceName: "heartEmptyIcon")
 
     var coin: Coin?
 
     func configure(_ coin: Coin) {
         self.coin = coin
         coinName.stringValue = getDisplayName(for: coin)
-        favouriteButton.contentTintColor = Colors.greenTextColor
         updateButtonImage()
     }
 
@@ -34,5 +33,6 @@ class CoinDescriptionCellView: NSTableCellView {
         guard let coin = self.coin else { return }
         let favorite = CoinPreferenceStorageService.isFavorite(coin)
         favouriteButton.image = favorite ? selectedItemIcon : unselectedItemIcon
+        favouriteButton.contentTintColor = favorite ? Colors.redIconColor : Colors.defaultIconColor
     }
 }

@@ -9,19 +9,6 @@ class TouchBarCoinItemController: NSViewController {
     var coin: DisplayCoin?
     var priceStatus: CoinUtils.PriceStatus = .stable
 
-    var displayName: String {
-        if let baseAsset = coin?.coinDetails?.baseAsset, let quoteAsset = coin?.coinDetails?.quoteAsset {
-            return "\(baseAsset)/\(quoteAsset)"
-        } else {
-            return symbol
-        }
-    }
-
-    var displayPrice: String {
-        let number = NSNumber(value: Double(coin?.price ?? "") ?? 0.0)
-        return "\(number.decimalValue)"
-    }
-
     var priceAmount: Double? {
         return Double(coin?.price ?? "")
     }
@@ -68,8 +55,8 @@ class TouchBarCoinItemController: NSViewController {
 
     func resetupView() {
         self.view.isHidden = false
-        nameLabel.stringValue = self.displayName
-        priceLabel.stringValue = self.displayPrice
+        nameLabel.stringValue = self.coin?.coinDetails?.displayName ?? ""
+        priceLabel.stringValue = self.coin?.displayPrice ?? ""
         priceLabel.textColor = priceStatus.color
         nameLabel.textColor = Colors.defaultTextColor
         self.view.layoutSubtreeIfNeeded()

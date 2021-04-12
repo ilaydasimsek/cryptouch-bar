@@ -10,6 +10,11 @@ struct DisplayCoin: Decodable {
         return symbol
     }
 
+    var displayPrice: String {
+        let number = NSNumber(value: Double(self.price) ?? 0.0)
+        return "\(number.decimalValue)"
+    }
+
     static func decode(fromJson json: JSON) -> DisplayCoin? {
         guard let symbol = json["symbol"].string else { return nil }
         return DisplayCoin(
@@ -27,6 +32,14 @@ struct Coin: Decodable {
 
     var id: String {
         return symbol
+    }
+
+    var displayName: String {
+        if let baseAsset = self.baseAsset, let quoteAsset = self.quoteAsset {
+            return "\(baseAsset)/\(quoteAsset)"
+        } else {
+            return symbol
+        }
     }
 
     static func decode(fromJson json: JSON) -> Coin? {

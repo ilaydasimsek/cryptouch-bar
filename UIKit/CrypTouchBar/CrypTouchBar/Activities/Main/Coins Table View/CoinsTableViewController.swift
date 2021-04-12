@@ -43,8 +43,9 @@ extension CoinsTableViewController: NSTableViewDataSource {
 extension CoinsTableViewController: NSTableViewDelegate {
 
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        if let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(CoinDescriptionCellView.nibIdentifier), owner: nil) as? CoinDescriptionCellView {
-            cell.configure(coins[row])
+        if let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(CoinDescriptionCellView.nibIdentifier), owner: nil) as? CoinDescriptionCellView,
+           let row = coins[safe: row]{
+            cell.configure(row)
             return cell
         }
         return nil

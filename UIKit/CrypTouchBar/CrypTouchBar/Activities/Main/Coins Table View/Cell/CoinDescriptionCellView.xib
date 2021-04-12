@@ -14,7 +14,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button translatesAutoresizingMaskIntoConstraints="NO" id="2AP-y9-p41">
-                    <rect key="frame" x="3" y="0.0" width="92" height="92"/>
+                    <rect key="frame" x="3" y="4" width="87" height="87"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="2AP-y9-p41" secondAttribute="height" multiplier="1:1" id="yYq-uA-9wF"/>
                     </constraints>
@@ -38,9 +38,9 @@
             <constraints>
                 <constraint firstItem="uA1-BY-4Rm" firstAttribute="centerY" secondItem="iVy-3c-2T6" secondAttribute="centerY" id="1mg-1G-D7e"/>
                 <constraint firstItem="2AP-y9-p41" firstAttribute="leading" secondItem="iVy-3c-2T6" secondAttribute="leading" constant="3" id="3ut-2z-0i8"/>
-                <constraint firstItem="2AP-y9-p41" firstAttribute="top" secondItem="iVy-3c-2T6" secondAttribute="top" constant="3" id="Df1-qy-N18"/>
-                <constraint firstItem="uA1-BY-4Rm" firstAttribute="leading" secondItem="2AP-y9-p41" secondAttribute="trailing" constant="3" id="Ssb-hE-LyB"/>
-                <constraint firstAttribute="bottom" secondItem="2AP-y9-p41" secondAttribute="bottom" id="cks-Yl-BTX"/>
+                <constraint firstItem="2AP-y9-p41" firstAttribute="centerY" secondItem="iVy-3c-2T6" secondAttribute="centerY" id="3wt-uF-EWP"/>
+                <constraint firstItem="2AP-y9-p41" firstAttribute="top" secondItem="iVy-3c-2T6" secondAttribute="top" constant="4" id="Df1-qy-N18"/>
+                <constraint firstItem="uA1-BY-4Rm" firstAttribute="leading" secondItem="2AP-y9-p41" secondAttribute="trailing" constant="8" id="Ssb-hE-LyB"/>
             </constraints>
             <connections>
                 <outlet property="coinName" destination="uA1-BY-4Rm" id="nyS-hu-78k"/>
