@@ -26,6 +26,18 @@ class HorizontalScrollableStackView: NSView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    func addViews(_ views: [NSView]) {
+        views.forEach{ view in
+            self.stackView.addView(view, in: .trailing)
+        }
+    }
+
+    func removeViews(_ views: [NSView]) {
+        views.forEach { view in
+            self.stackView.removeView(view)
+        }
+    }
 }
 
 // MARK: - View Setup

@@ -31,7 +31,8 @@
 		CABE42AC261B2AED00BBF685 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE42AB261B2AED00BBF685 /* MainViewController.swift */; };
 		CABE42C0261B2F2B00BBF685 /* TouchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE42BF261B2F2B00BBF685 /* TouchBarController.swift */; };
 		CAC30B3C2622140200755F12 /* CoinPreferenceStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC30B3B2622140200755F12 /* CoinPreferenceStorageService.swift */; };
-		CACECCD3261C7C1000154523 /* TouchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACECCD2261C7C1000154523 /* TouchBarView.swift */; };
+		CACD7011262472C100876FED /* Array+NSTouchBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACD7010262472C100876FED /* Array+NSTouchBarItem.swift */; };
+		CACECCD3261C7C1000154523 /* ScrollableTouchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACECCD2261C7C1000154523 /* ScrollableTouchBarView.swift */; };
 		CAF774F12620AD9900F24B51 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF774F02620AD9900F24B51 /* Context.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,7 +86,8 @@
 		CABE42C9261B32D200BBF685 /* TouchBarPrivateApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchBarPrivateApi.h; sourceTree = "<group>"; };
 		CABE42CD261B32D200BBF685 /* CrypTouchBarBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrypTouchBarBridgingHeader.h; sourceTree = "<group>"; };
 		CAC30B3B2622140200755F12 /* CoinPreferenceStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinPreferenceStorageService.swift; sourceTree = "<group>"; };
-		CACECCD2261C7C1000154523 /* TouchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarView.swift; sourceTree = "<group>"; };
+		CACD7010262472C100876FED /* Array+NSTouchBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+NSTouchBarItem.swift"; sourceTree = "<group>"; };
+		CACECCD2261C7C1000154523 /* ScrollableTouchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTouchBarView.swift; sourceTree = "<group>"; };
 		CAF774F02620AD9900F24B51 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,6 +192,7 @@
 			children = (
 				CABE4294261B2A7700BBF685 /* NSView+Nib.swift */,
 				CAAFA231261E4EEA004D9314 /* NSView+Constraints.swift */,
+				CACD7010262472C100876FED /* Array+NSTouchBarItem.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 		CABE4293261B2A6E00BBF685 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CAAFA222261DF4A6004D9314 /* Models */,
 				CAAFA215261DF3B3004D9314 /* Utils */,
 				CAAFA237261E540B004D9314 /* Views */,
 				CAAFA236261E5400004D9314 /* Extensions */,
@@ -290,10 +294,9 @@
 		CABE42BE261B2F2000BBF685 /* Touch Bar */ = {
 			isa = PBXGroup;
 			children = (
-				CAAFA222261DF4A6004D9314 /* Models */,
 				CA68A338261C89CD008E17C9 /* Touch Bar Item */,
 				CABE42BF261B2F2B00BBF685 /* TouchBarController.swift */,
-				CACECCD2261C7C1000154523 /* TouchBarView.swift */,
+				CACECCD2261C7C1000154523 /* ScrollableTouchBarView.swift */,
 			);
 			path = "Touch Bar";
 			sourceTree = "<group>";
@@ -449,7 +452,7 @@
 				CA63B46826207FA600C6D17A /* CoinDescriptionCellView.swift in Sources */,
 				CAAFA1FD261DDD69004D9314 /* TouchBarCoinItemViewController.swift in Sources */,
 				CA63B480262085E800C6D17A /* CoinsTableViewController.swift in Sources */,
-				CACECCD3261C7C1000154523 /* TouchBarView.swift in Sources */,
+				CACECCD3261C7C1000154523 /* ScrollableTouchBarView.swift in Sources */,
 				CAAFA232261E4EEA004D9314 /* NSView+Constraints.swift in Sources */,
 				CAAFA217261DF3B3004D9314 /* CoinService.swift in Sources */,
 				CA457FE5261DD60D00B50679 /* HorizontalScrollableStackView.swift in Sources */,
@@ -461,6 +464,7 @@
 				CAAFA218261DF3B3004D9314 /* CoinUtils.swift in Sources */,
 				CAF774F12620AD9900F24B51 /* Context.swift in Sources */,
 				CABE42AC261B2AED00BBF685 /* MainViewController.swift in Sources */,
+				CACD7011262472C100876FED /* Array+NSTouchBarItem.swift in Sources */,
 				CAC30B3C2622140200755F12 /* CoinPreferenceStorageService.swift in Sources */,
 				CABE42C0261B2F2B00BBF685 /* TouchBarController.swift in Sources */,
 			);

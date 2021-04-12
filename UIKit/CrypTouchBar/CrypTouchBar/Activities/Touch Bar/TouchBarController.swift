@@ -1,10 +1,16 @@
 import Cocoa
 
 class TouchBarController: NSObject {
-    var touchBarViewId = NSTouchBarItem.Identifier("com.cryptouchbar.coinbar.".appending(UUID().uuidString))
-    var touchBarMainItemId = NSTouchBarItem.Identifier("com.cryptouchbar.coinbar")
-    var touchBarView: TouchBarView?
-    var touchBar: NSTouchBar = NSTouchBar()
+    private let touchBarViewId = NSTouchBarItem.Identifier("com.cryptouchbar.coinbar.".appending(UUID().uuidString))
+    private let touchBarMainItemId = NSTouchBarItem.Identifier("com.cryptouchbar.coinbar")
+    private let touchBar: NSTouchBar = NSTouchBar()
+
+    private var touchBarView: ScrollableTouchBarView?
+    private var touchBarItems: [TouchBarCoinItem] = []
+
+    private var currentSymbols: [String] {
+        return CoinPreferenceStorageService.favoriteCoinSymbols
+    }
 
     override init() {
         super.init()
@@ -29,8 +35,9 @@ private extension TouchBarController {
     func prepareTouchBar() {
         touchBar.delegate = self
         touchBar.defaultItemIdentifiers = [touchBarViewId]
-        touchBarView = TouchBarView(identifier: touchBarViewId,
-                                    items: createTouchBarChildrenItems())
+        touchBarItems = createTouchBarChildrenItems(for: currentSymbols)
+        touchBarView = ScrollableTouchBarView(identifier: touchBarViewId,
+                                    childViews: touchBarItems.views)
     }
 
     /**
@@ -46,28 +53,33 @@ private extension TouchBarController {
     }
 
     @objc func onSelectedCoinsChanged(_ notification: Notification) {
-        touchBarView?.refreshItems(createTouchBarChildrenItems())
+        let visibleSymbols: [String] = self.touchBarItems.map { $0.symbol }
+
+        let removedItems = self.touchBarItems.filter { item in
+            return !currentSymbols.contains(item.symbol)
+        }
+        
+        let addedSymbols = currentSymbols.filter({ return !visibleSymbols.contains($0) })
+        let newItems = self.createTouchBarChildrenItems(for: addedSymbols)
+
+        self.touchBarItems.append(contentsOf: newItems)
+        self.touchBarItems = touchBarItems.filter {!removedItems.contains($0)}
+
+        touchBarView?.refreshItems(addedViews: newItems.views, removedViews: removedItems.views)
     }
 }
 
-// MARK: - View creation
+// MARK: - View operations
 private extension TouchBarController {
 
-    func createTouchBarChildrenItems() -> [NSTouchBarItem] {
-        return CoinPreferenceStorageService.favoriteCoinSymbols.map({ symbol in
+    func createTouchBarChildrenItems(for symbols: [String]) -> [TouchBarCoinItem] {
+        return symbols.map({ symbol in
             self.createCoinItem(withSymbol: symbol)
         })
     }
 
     func createCoinItem(withSymbol symbol: String) -> TouchBarCoinItem {
-        let itemId = createCoinItemId()
-        return TouchBarCoinItem(identifier: itemId, symbol: symbol)
-    }
-
-    func createCoinItemId() -> NSTouchBarItem.Identifier {
-        let currentTime = Date().timeIntervalSince1970
-        let type = TouchBarCoinItem.self
-        return NSTouchBarItem.Identifier("\(type)_\(currentTime)")
+        return TouchBarCoinItem(symbol: symbol)
     }
 }
 

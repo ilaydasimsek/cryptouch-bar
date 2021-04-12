@@ -1,11 +1,12 @@
 import Cocoa
 
-class TouchBarCoinItem: NSCustomTouchBarItem, NSGestureRecognizerDelegate {
+class TouchBarCoinItem: NSCustomTouchBarItem
+{
     let symbol: String
 
-    init(identifier: NSTouchBarItem.Identifier, symbol: String) {
+    init(symbol: String) {
         self.symbol = symbol
-        super.init(identifier: identifier)
+        super.init(identifier: NSTouchBarItem.Identifier(symbol))
         viewController = TouchBarCoinItemController(symbol: symbol)
     }
 

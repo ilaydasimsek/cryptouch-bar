@@ -67,7 +67,6 @@ class TouchBarCoinItemController: NSViewController {
     }
 
     func resetupView() {
-        guard let coin = coin else { return }
         self.view.isHidden = false
         nameLabel.stringValue = self.displayName
         priceLabel.stringValue = self.displayPrice
@@ -86,6 +85,7 @@ private extension TouchBarCoinItemController {
         self.view.layer?.borderColor = Colors.borderColor.cgColor
         self.view.layer?.backgroundColor = Colors.mainBackgroundColor.cgColor
         self.view.isHidden = true
+        self.view.setWidth(toConstant: 185)
         nameLabel.stringValue = ""
         priceLabel.stringValue = ""
     }
