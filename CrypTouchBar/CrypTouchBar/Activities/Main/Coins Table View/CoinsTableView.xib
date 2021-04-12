@@ -8,7 +8,6 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="CoinsTableViewController" customModule="CrypTouchBar" customModuleProvider="target">
             <connections>
-                <outlet property="coinsColumn" destination="uQb-zz-cxV" id="KBC-B2-Z3l"/>
                 <outlet property="tableView" destination="0vh-XS-EdA" id="C2b-K4-V9a"/>
                 <outlet property="view" destination="c22-O7-iKe" id="Cks-wp-9kk"/>
             </connections>
@@ -25,8 +24,8 @@
                         <rect key="frame" x="1" y="1" width="491" height="270"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="automatic" headerView="9Ze-3F-nd7" viewBased="YES" id="0vh-XS-EdA">
-                                <rect key="frame" x="0.0" y="0.0" width="491" height="242"/>
+                            <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="automatic" viewBased="YES" id="0vh-XS-EdA">
+                                <rect key="frame" x="0.0" y="0.0" width="491" height="267"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <size key="intercellSpacing" width="17" height="0.0"/>
                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -54,18 +53,15 @@
                             </tableView>
                         </subviews>
                     </clipView>
+                    <edgeInsets key="contentInsets" left="0.0" right="0.0" top="4" bottom="0.0"/>
                     <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="cbp-Ep-PP5">
-                        <rect key="frame" x="1" y="256" width="491" height="15"/>
+                        <rect key="frame" x="1" y="255" width="491" height="16"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
-                    <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="qck-p2-x0a">
+                    <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="qck-p2-x0a">
                         <rect key="frame" x="224" y="17" width="15" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
-                    <tableHeaderView key="headerView" wantsLayer="YES" id="9Ze-3F-nd7">
-                        <rect key="frame" x="0.0" y="0.0" width="491" height="28"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </tableHeaderView>
                 </scrollView>
             </subviews>
             <constraints>

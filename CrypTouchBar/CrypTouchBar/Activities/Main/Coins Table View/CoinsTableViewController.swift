@@ -2,8 +2,7 @@ import Cocoa
 
 class CoinsTableViewController: NSViewController {
     @IBOutlet weak var tableView: NSTableView!
-    @IBOutlet weak var coinsColumn: NSTableColumn!
-    
+
     var coins: [Coin] = []
 
     override var nibName: NSNib.Name? {
@@ -28,7 +27,6 @@ class CoinsTableViewController: NSViewController {
                            forIdentifier: NSUserInterfaceItemIdentifier(CoinDescriptionCellView.nibIdentifier))
         tableView.delegate = self
         tableView.dataSource = self
-        coinsColumn.title = "Coins"
     }
 
 }
@@ -44,8 +42,9 @@ extension CoinsTableViewController: NSTableViewDelegate {
 
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         if let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(CoinDescriptionCellView.nibIdentifier), owner: nil) as? CoinDescriptionCellView,
-           let row = coins[safe: row]{
-            cell.configure(row)
+           row < coins.count {
+            let coin = coins[row]
+            cell.configure(coin)
             return cell
         }
         return nil

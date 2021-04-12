@@ -13,7 +13,6 @@
 		CA63B47A262085D700C6D17A /* CoinsTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA63B479262085D700C6D17A /* CoinsTableView.xib */; };
 		CA63B480262085E800C6D17A /* CoinsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA63B47F262085E800C6D17A /* CoinsTableViewController.swift */; };
 		CA68A334261C8869008E17C9 /* TouchBarCoinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA68A333261C8869008E17C9 /* TouchBarCoinItem.swift */; };
-		CA922186262481E300BF2CC5 /* Collection+NullSafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA922185262481E300BF2CC5 /* Collection+NullSafety.swift */; };
 		CAAFA1F8261DDD5B004D9314 /* TouchBarCoinItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAFA1F7261DDD5B004D9314 /* TouchBarCoinItemView.xib */; };
 		CAAFA1FD261DDD69004D9314 /* TouchBarCoinItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFA1FC261DDD69004D9314 /* TouchBarCoinItemViewController.swift */; };
 		CAAFA217261DF3B3004D9314 /* CoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFA214261DF3B3004D9314 /* CoinService.swift */; };
@@ -61,7 +60,6 @@
 		CA63B479262085D700C6D17A /* CoinsTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinsTableView.xib; sourceTree = "<group>"; };
 		CA63B47F262085E800C6D17A /* CoinsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsTableViewController.swift; sourceTree = "<group>"; };
 		CA68A333261C8869008E17C9 /* TouchBarCoinItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarCoinItem.swift; sourceTree = "<group>"; };
-		CA922185262481E300BF2CC5 /* Collection+NullSafety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+NullSafety.swift"; sourceTree = "<group>"; };
 		CAAFA1F7261DDD5B004D9314 /* TouchBarCoinItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TouchBarCoinItemView.xib; sourceTree = "<group>"; };
 		CAAFA1FC261DDD69004D9314 /* TouchBarCoinItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarCoinItemViewController.swift; sourceTree = "<group>"; };
 		CAAFA214261DF3B3004D9314 /* CoinService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinService.swift; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 				CABE4294261B2A7700BBF685 /* NSView+Nib.swift */,
 				CAAFA231261E4EEA004D9314 /* NSView+Constraints.swift */,
 				CACD7010262472C100876FED /* Array+NSTouchBarItem.swift */,
-				CA922185262481E300BF2CC5 /* Collection+NullSafety.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -452,7 +449,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA922186262481E300BF2CC5 /* Collection+NullSafety.swift in Sources */,
 				CA63B46826207FA600C6D17A /* CoinDescriptionCellView.swift in Sources */,
 				CAAFA1FD261DDD69004D9314 /* TouchBarCoinItemViewController.swift in Sources */,
 				CA63B480262085E800C6D17A /* CoinsTableViewController.swift in Sources */,
