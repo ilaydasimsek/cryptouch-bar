@@ -7,9 +7,9 @@ class CoinDescriptionCellView: NSTableCellView {
     let selectedItemIcon = NSImage(imageLiteralResourceName: "heartFilledIcon")
     let unselectedItemIcon = NSImage(imageLiteralResourceName: "heartEmptyIcon")
 
-    var coin: Coin?
+    var coin: CoinDetails?
 
-    func configure(_ coin: Coin) {
+    func configure(_ coin: CoinDetails) {
         self.coin = coin
         coinName.stringValue = getDisplayName(for: coin)
         updateButtonImage()
@@ -21,7 +21,7 @@ class CoinDescriptionCellView: NSTableCellView {
         updateButtonImage()
     }
 
-    private func getDisplayName(for coin: Coin) -> String {
+    private func getDisplayName(for coin: CoinDetails) -> String {
          if let baseAsset = coin.baseAsset, let quoteAsset = coin.quoteAsset {
              return "\(baseAsset)/\(quoteAsset)"
          } else {

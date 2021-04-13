@@ -7,7 +7,11 @@ enum Response {
 }
 
 class CoinService {
-    let currentPriceApi = "https://api.binance.com/api/v3"
+    static let shared = CoinService()
+
+    private init() {}
+
+    private let currentPriceApi = "https://api.binance.com/api/v3"
     
     func getAllSymbols(completion: @escaping ((BinanceSymbolsResponse) -> Void), onError: ((String) -> Void)? = nil) {
         let api = "\(currentPriceApi)/exchangeInfo"

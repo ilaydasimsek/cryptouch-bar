@@ -17,7 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         window.styleMask.remove(.resizable)
-        window.contentViewController = MainViewController()
+        window.contentViewController = CoinSelectionViewController()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

@@ -1,28 +1,26 @@
 import Cocoa
 
-class MainViewController: NSViewController {
+class CoinSelectionViewController: NSViewController {
+
     override var nibName: NSNib.Name? {
-        return "MainView"
+        return "CoinSelectionView"
     }
 
-    @IBOutlet weak var tableViewContainer: NSView!
-    @IBOutlet weak var searchField: NSSearchField!
-
-    let coinService = CoinService()
+    var rootView: CoinSelectionView {
+        return self.view as! CoinSelectionView
+    }
 
     let tableViewController: CoinsTableViewController = CoinsTableViewController()
-    var coins: [Coin] = [] {
-        didSet {
-            self.tableViewController.setCoinData(coins: self.visibleCoins)
-        }
-    }
-    var searchString: String = "" {
-        didSet {
-            self.tableViewController.setCoinData(coins: self.visibleCoins)
-        }
+
+    var coins: [CoinDetails] = [] {
+        didSet { updateTableViewCoinData() }
     }
 
-    var visibleCoins: [Coin] {
+    var searchString: String = "" {
+        didSet { updateTableViewCoinData() }
+    }
+
+    var visibleCoins: [CoinDetails] {
         if searchString != "" {
             return self.coins.filter { $0.displayName.lowercased()
                                         .contains(searchString.lowercased()) }
@@ -34,15 +32,15 @@ class MainViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         startFetch()
-        prepareView()
+        rootView.setupView(withChild: tableViewController.view, searchDelegate: self)
     }
 }
 
 // MARK: - View preparation
-private extension MainViewController {
+private extension CoinSelectionViewController {
     
     func startFetch() {
-        coinService.getAllSymbols(completion: { response in
+        CoinService.shared.getAllSymbols(completion: { response in
             response.binanceSymbolItems.forEach({ coin in
                 self.coins.append(coin)
             })
@@ -50,15 +48,13 @@ private extension MainViewController {
         })
     }
 
-    func prepareView() {
-        self.tableViewContainer.addSubview(tableViewController.view)
-        tableViewController.view.frame = self.tableViewContainer.bounds
-        self.searchField.delegate = self
-        self.searchField.sendsSearchStringImmediately = true
+    func updateTableViewCoinData() {
+        self.tableViewController.setCoinData(coins: self.visibleCoins)
     }
 }
 
-extension MainViewController: NSSearchFieldDelegate {
+extension CoinSelectionViewController: NSSearchFieldDelegate {
+
     func searchFieldDidEndSearching(_ sender: NSSearchField) {
         self.searchString = ""
     }

@@ -3,7 +3,7 @@ import Cocoa
 class CoinsTableViewController: NSViewController {
     @IBOutlet weak var tableView: NSTableView!
 
-    var coins: [Coin] = []
+    var coins: [CoinDetails] = []
 
     override var nibName: NSNib.Name? {
         return "CoinsTableView"
@@ -14,7 +14,7 @@ class CoinsTableViewController: NSViewController {
         prepareTableView()
     }
 
-    func setCoinData(coins: [Coin]) {
+    func setCoinData(coins: [CoinDetails]) {
         self.coins = coins
         DispatchQueue.main.async {
             self.tableView.reloadData()

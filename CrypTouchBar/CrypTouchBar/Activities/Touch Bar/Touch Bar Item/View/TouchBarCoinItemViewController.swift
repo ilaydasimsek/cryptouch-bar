@@ -4,8 +4,7 @@ class TouchBarCoinItemController: NSViewController {
     @IBOutlet weak var nameLabel: NSTextField!
     @IBOutlet weak var priceLabel: NSTextField!
 
-    let coinService = CoinService()
-    var coinDetails: Coin
+    var coinDetails: CoinDetails
     var displayCoin: DisplayCoin?
     var priceStatus: CoinUtils.PriceStatus = .stable
 
@@ -17,7 +16,7 @@ class TouchBarCoinItemController: NSViewController {
         return "TouchBarCoinItemView"
     }
 
-    init(coinDetails: Coin) {
+    init(coinDetails: CoinDetails) {
         self.coinDetails = coinDetails
         super.init(nibName: nil, bundle: nil)
     }
@@ -37,7 +36,7 @@ class TouchBarCoinItemController: NSViewController {
     }
 
     func startFetch() {
-        coinService.getCurrentPrice(symbol: coinDetails.symbol, completion: { [weak self] newCoin in
+        CoinService.shared.getCurrentPrice(symbol: coinDetails.symbol, completion: { [weak self] newCoin in
             guard let self = self else { return }
             DispatchQueue.main.async {
                 if let currentPrice = Double(self.displayCoin?.price ?? ""), let newPrice = Double(newCoin.price) {

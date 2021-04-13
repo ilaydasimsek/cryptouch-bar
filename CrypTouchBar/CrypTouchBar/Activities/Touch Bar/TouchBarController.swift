@@ -8,7 +8,7 @@ class TouchBarController: NSObject {
     private var touchBarView: ScrollableTouchBarView?
     private var touchBarItems: [TouchBarCoinItem] = []
 
-    private var currentCoins: [Coin] {
+    private var currentCoins: [CoinDetails] {
         return CoinPreferenceStorageService.favoriteCoins
     }
 
@@ -53,7 +53,7 @@ private extension TouchBarController {
     }
 
     @objc func onSelectedCoinsChanged(_ notification: Notification) {
-        let visibleCoins: [Coin] = self.touchBarItems.map { $0.coin }
+        let visibleCoins: [CoinDetails] = self.touchBarItems.map { $0.coin }
 
         let removedItems = self.touchBarItems.filter { item in
             return !currentCoins.contains(item.coin)
@@ -72,13 +72,13 @@ private extension TouchBarController {
 // MARK: - View operations
 private extension TouchBarController {
 
-    func createTouchBarChildrenItems(for coins: [Coin]) -> [TouchBarCoinItem] {
+    func createTouchBarChildrenItems(for coins: [CoinDetails]) -> [TouchBarCoinItem] {
         return coins.map({ coin in
             self.createCoinItem(withCoin: coin)
         })
     }
 
-    func createCoinItem(withCoin coin: Coin) -> TouchBarCoinItem {
+    func createCoinItem(withCoin coin: CoinDetails) -> TouchBarCoinItem {
         return TouchBarCoinItem(coin: coin)
     }
 }
