@@ -1,20 +1,10 @@
 import Cocoa
 
-class CoinSelectionViewController: NSViewController {
-
-    override var nibName: NSNib.Name? {
-        return "CoinSelectionView"
-    }
-
-    var rootView: CoinSelectionView {
-        return self.view as! CoinSelectionView
-    }
+class CoinSelectionViewController: NibViewController<CoinSelectionView> {
 
     let tableViewController: CoinsTableViewController = CoinsTableViewController()
 
-    var coins: [CoinDetails] = [] {
-        didSet { updateTableViewCoinData() }
-    }
+    var coins: [CoinDetails] = []
 
     var searchString: String = "" {
         didSet { updateTableViewCoinData() }
@@ -44,7 +34,7 @@ private extension CoinSelectionViewController {
             response.binanceSymbolItems.forEach({ coin in
                 self.coins.append(coin)
             })
-            self.tableViewController.setCoinData(coins: self.coins)
+            self.updateTableViewCoinData()
         })
     }
 
