@@ -127,13 +127,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CA3D0B46262753CA0011DB68 /* Favorites */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Favorites;
-			sourceTree = "<group>";
-		};
 		CA63B477262085B700C6D17A /* Coins Table View */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,7 +289,6 @@
 		CABE42A1261B2ACA00BBF685 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
-				CA3D0B46262753CA0011DB68 /* Favorites */,
 				CABE42BE261B2F2000BBF685 /* Touch Bar */,
 				CABE42A2261B2ACF00BBF685 /* Coin Selection */,
 			);
