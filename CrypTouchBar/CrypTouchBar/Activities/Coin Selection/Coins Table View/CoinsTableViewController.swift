@@ -1,13 +1,8 @@
 import Cocoa
 
-class CoinsTableViewController: NSViewController {
-    @IBOutlet weak var tableView: NSTableView!
+class CoinsTableViewController: NibViewController<CoinsTableView> {
 
-    var coins: [CoinDetails] = []
-
-    override var nibName: NSNib.Name? {
-        return "CoinsTableView"
-    }
+    private var coins: [CoinDetails] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,16 +12,14 @@ class CoinsTableViewController: NSViewController {
     func setCoinData(coins: [CoinDetails]) {
         self.coins = coins
         DispatchQueue.main.async {
-            self.tableView.reloadData()
+            self.rootView.tableView.reloadData()
         }
     }
 
     private func prepareTableView() {
-        let customCellNib = NSNib.init(nibNamed: CoinDescriptionCellView.nibIdentifier, bundle: nil)
-        tableView.register(customCellNib,
-                           forIdentifier: NSUserInterfaceItemIdentifier(CoinDescriptionCellView.nibIdentifier))
-        tableView.delegate = self
-        tableView.dataSource = self
+        rootView.tableView.registerNib(withIdentifier: CoinDescriptionCellView.nibIdentifier)
+        rootView.tableView.delegate = self
+        rootView.tableView.dataSource = self
     }
 
 }

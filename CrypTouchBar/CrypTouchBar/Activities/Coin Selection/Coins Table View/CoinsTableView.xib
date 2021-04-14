@@ -8,13 +8,12 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="CoinsTableViewController" customModule="CrypTouchBar" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="0vh-XS-EdA" id="C2b-K4-V9a"/>
                 <outlet property="view" destination="c22-O7-iKe" id="Cks-wp-9kk"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customView id="c22-O7-iKe">
+        <customView id="c22-O7-iKe" customClass="CoinsTableView" customModule="CrypTouchBar" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="493" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
@@ -44,7 +43,7 @@
                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         <prototypeCellViews>
                                             <tableCellView id="hxa-hL-Eea" customClass="CoinDescriptionCellView" customModule="CrypTouchBar" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="0.0" width="474" height="24"/>
+                                                <rect key="frame" x="18" y="0.0" width="474" height="24"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             </tableCellView>
                                         </prototypeCellViews>
@@ -70,6 +69,9 @@
                 <constraint firstAttribute="trailing" secondItem="E8L-8v-GfJ" secondAttribute="trailing" id="dBz-O3-8Bb"/>
                 <constraint firstItem="E8L-8v-GfJ" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="uGK-Fa-xAx"/>
             </constraints>
+            <connections>
+                <outlet property="tableView" destination="0vh-XS-EdA" id="es9-me-ltr"/>
+            </connections>
             <point key="canvasLocation" x="-30.5" y="142"/>
         </customView>
     </objects>

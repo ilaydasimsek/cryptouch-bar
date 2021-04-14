@@ -35,6 +35,8 @@
 		CAC7817D2627018100317BDC /* TouchBarCoinItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7817C2627018100317BDC /* TouchBarCoinItemView.swift */; };
 		CAC78185262703BA00317BDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC78184262703BA00317BDC /* ViewController.swift */; };
 		CAC781982627078600317BDC /* CoinsTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC781972627078600317BDC /* CoinsTableView.xib */; };
+		CAC781A826270E0600317BDC /* CoinsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC781A726270E0600317BDC /* CoinsTableView.swift */; };
+		CAC781AD26270EA400317BDC /* NsTableView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC781AC26270EA400317BDC /* NsTableView+Nib.swift */; };
 		CACD7011262472C100876FED /* Array+NSTouchBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACD7010262472C100876FED /* Array+NSTouchBarItem.swift */; };
 		CACECCD3261C7C1000154523 /* ScrollableTouchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACECCD2261C7C1000154523 /* ScrollableTouchBarView.swift */; };
 		CAF774F12620AD9900F24B51 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF774F02620AD9900F24B51 /* Context.swift */; };
@@ -94,6 +96,8 @@
 		CAC7817C2627018100317BDC /* TouchBarCoinItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarCoinItemView.swift; sourceTree = "<group>"; };
 		CAC78184262703BA00317BDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAC781972627078600317BDC /* CoinsTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoinsTableView.xib; sourceTree = "<group>"; };
+		CAC781A726270E0600317BDC /* CoinsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsTableView.swift; sourceTree = "<group>"; };
+		CAC781AC26270EA400317BDC /* NsTableView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NsTableView+Nib.swift"; sourceTree = "<group>"; };
 		CACD7010262472C100876FED /* Array+NSTouchBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+NSTouchBarItem.swift"; sourceTree = "<group>"; };
 		CACECCD2261C7C1000154523 /* ScrollableTouchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTouchBarView.swift; sourceTree = "<group>"; };
 		CAF774F02620AD9900F24B51 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 			children = (
 				CA63B478262085C700C6D17A /* Cell */,
 				CAC781972627078600317BDC /* CoinsTableView.xib */,
+				CAC781A726270E0600317BDC /* CoinsTableView.swift */,
 				CA63B47F262085E800C6D17A /* CoinsTableViewController.swift */,
 			);
 			path = "Coins Table View";
@@ -203,6 +208,7 @@
 				CABE4294261B2A7700BBF685 /* NSView+Nib.swift */,
 				CAAFA231261E4EEA004D9314 /* NSView+Constraints.swift */,
 				CACD7010262472C100876FED /* Array+NSTouchBarItem.swift */,
+				CAC781AC26270EA400317BDC /* NsTableView+Nib.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -464,10 +470,12 @@
 				CA63B46826207FA600C6D17A /* CoinDescriptionCellView.swift in Sources */,
 				CAAFA1FD261DDD69004D9314 /* TouchBarCoinItemViewController.swift in Sources */,
 				CA63B480262085E800C6D17A /* CoinsTableViewController.swift in Sources */,
+				CAC781A826270E0600317BDC /* CoinsTableView.swift in Sources */,
 				CACECCD3261C7C1000154523 /* ScrollableTouchBarView.swift in Sources */,
 				CAC78185262703BA00317BDC /* ViewController.swift in Sources */,
 				CAAFA232261E4EEA004D9314 /* NSView+Constraints.swift in Sources */,
 				CAAFA217261DF3B3004D9314 /* CoinService.swift in Sources */,
+				CAC781AD26270EA400317BDC /* NsTableView+Nib.swift in Sources */,
 				CAC7817D2627018100317BDC /* TouchBarCoinItemView.swift in Sources */,
 				CA457FE5261DD60D00B50679 /* HorizontalScrollableStackView.swift in Sources */,
 				CABE4262261B27C400BBF685 /* AppDelegate.swift in Sources */,

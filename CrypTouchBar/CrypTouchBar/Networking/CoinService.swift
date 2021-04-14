@@ -52,7 +52,9 @@ class CoinService {
     }
 
     private func sendGetRequest(forApi api: String, completion: ((Response) -> Void)?) {
-        let url = URL(string: api)!
+        guard let url = URL(string: api) else {
+            fatalError("Provided api \(api) is not valid.")
+        }
         
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             if let data = data {

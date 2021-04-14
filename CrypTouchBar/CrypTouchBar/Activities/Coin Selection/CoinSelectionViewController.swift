@@ -2,15 +2,14 @@ import Cocoa
 
 class CoinSelectionViewController: NibViewController<CoinSelectionView> {
 
-    let tableViewController: CoinsTableViewController = CoinsTableViewController()
+    private let tableViewController: CoinsTableViewController = CoinsTableViewController()
 
-    var coins: [CoinDetails] = []
-
-    var searchString: String = "" {
+    private var coins: [CoinDetails] = []
+    private var searchString: String = "" {
         didSet { updateTableViewCoinData() }
     }
 
-    var visibleCoins: [CoinDetails] {
+    private var visibleCoins: [CoinDetails] {
         if searchString != "" {
             return self.coins.filter { $0.displayName.lowercased()
                                         .contains(searchString.lowercased()) }
