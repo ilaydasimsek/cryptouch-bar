@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="CoinSelectionView" customModule="CrypTouchBar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <searchField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdv-DX-VLS">
+                    <rect key="frame" x="0.0" y="250" width="480" height="22"/>
+                    <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" focusRingType="none" usesSingleLineMode="YES" bezelStyle="round" id="k8V-ga-ff7">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </searchFieldCell>
+                </searchField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="70D-eh-7fT">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="250"/>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="70D-eh-7fT" secondAttribute="bottom" id="DqW-NT-Gnr"/>
+                <constraint firstItem="70D-eh-7fT" firstAttribute="top" secondItem="Cdv-DX-VLS" secondAttribute="bottom" id="HhQ-vr-7og"/>
+                <constraint firstAttribute="trailing" secondItem="70D-eh-7fT" secondAttribute="trailing" id="WnV-ku-4V2"/>
+                <constraint firstItem="70D-eh-7fT" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="Zn6-aq-ZUd"/>
+                <constraint firstAttribute="trailing" secondItem="Cdv-DX-VLS" secondAttribute="trailing" id="aSz-AG-IWf"/>
+                <constraint firstItem="Cdv-DX-VLS" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="swG-ZB-wG3"/>
+                <constraint firstItem="Cdv-DX-VLS" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="tUv-ix-M3I"/>
+            </constraints>
+            <connections>
+                <outlet property="searchField" destination="Cdv-DX-VLS" id="BNN-PH-w8r"/>
+                <outlet property="tableViewContainer" destination="70D-eh-7fT" id="4h9-nw-Vu3"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="120"/>
+        </customView>
+    </objects>
+</document>
