@@ -17,7 +17,7 @@ CrypTouchBar is an application designed for following the current prices of coin
 <img src="https://user-images.githubusercontent.com/36786266/115020341-24508480-9ec3-11eb-851a-74d5282f9867.gif" width="774" height="318"/>
 
 
-:star: Can't decide which coin to choose? Add as many coins as you wany and scroll to see them.
+:star: Can't decide which coin to choose? Add as many coins as you want and scroll to see them.
 
 <img src="https://user-images.githubusercontent.com/36786266/115020463-4c3fe800-9ec3-11eb-86ab-86dc1a91dd21.gif" width="774" height="318"/>
 
