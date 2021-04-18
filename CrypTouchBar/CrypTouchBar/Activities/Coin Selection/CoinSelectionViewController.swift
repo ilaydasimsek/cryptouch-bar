@@ -11,7 +11,7 @@ class CoinSelectionViewController: NibViewController<CoinSelectionView> {
 
     private var visibleCoins: [CoinDetails] {
         if searchString != "" {
-            return self.coins.filter { $0.displayName.lowercased()
+            return self.coins.filter { self.getDisplayName(coinDetails: $0).lowercased()
                                         .contains(searchString.lowercased()) }
         } else {
             return self.coins
@@ -39,6 +39,14 @@ private extension CoinSelectionViewController {
 
     func updateTableViewCoinData() {
         self.tableViewController.setCoinData(coins: self.visibleCoins)
+    }
+
+    func getDisplayName(coinDetails: CoinDetails) -> String {
+        if let baseAsset = coinDetails.baseAsset, let quoteAsset = coinDetails.quoteAsset {
+            return "\(baseAsset)/\(quoteAsset)"
+        } else {
+            return coinDetails.symbol
+        }
     }
 }
 

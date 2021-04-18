@@ -22,6 +22,7 @@
 		CAAFA224261DF4A6004D9314 /* CoinDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFA223261DF4A6004D9314 /* CoinDetails.swift */; };
 		CAAFA22A261DF52C004D9314 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFA229261DF52C004D9314 /* Colors.swift */; };
 		CAAFA232261E4EEA004D9314 /* NSView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFA231261E4EEA004D9314 /* NSView+Constraints.swift */; };
+		CAB622DE262C8B6A00498AA5 /* String+Indexing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB622DD262C8B6A00498AA5 /* String+Indexing.swift */; };
 		CABE4262261B27C400BBF685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE4261261B27C400BBF685 /* AppDelegate.swift */; };
 		CABE4264261B27C400BBF685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CABE4263261B27C400BBF685 /* Assets.xcassets */; };
 		CABE4267261B27C400BBF685 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CABE4265261B27C400BBF685 /* MainMenu.xib */; };
@@ -73,6 +74,7 @@
 		CAAFA223261DF4A6004D9314 /* CoinDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDetails.swift; sourceTree = "<group>"; };
 		CAAFA229261DF52C004D9314 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		CAAFA231261E4EEA004D9314 /* NSView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+Constraints.swift"; sourceTree = "<group>"; };
+		CAB622DD262C8B6A00498AA5 /* String+Indexing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Indexing.swift"; sourceTree = "<group>"; };
 		CABE425E261B27C400BBF685 /* CrypTouchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrypTouchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CABE4261261B27C400BBF685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CABE4263261B27C400BBF685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				CAAFA231261E4EEA004D9314 /* NSView+Constraints.swift */,
 				CACD7010262472C100876FED /* Array+NSTouchBarItem.swift */,
 				CAC781AC26270EA400317BDC /* NsTableView+Nib.swift */,
+				CAB622DD262C8B6A00498AA5 /* String+Indexing.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				CAC78185262703BA00317BDC /* ViewController.swift in Sources */,
 				CAAFA232261E4EEA004D9314 /* NSView+Constraints.swift in Sources */,
 				CAAFA217261DF3B3004D9314 /* CoinService.swift in Sources */,
+				CAB622DE262C8B6A00498AA5 /* String+Indexing.swift in Sources */,
 				CAC781AD26270EA400317BDC /* NsTableView+Nib.swift in Sources */,
 				CAC7817D2627018100317BDC /* TouchBarCoinItemView.swift in Sources */,
 				CA457FE5261DD60D00B50679 /* HorizontalScrollableStackView.swift in Sources */,
