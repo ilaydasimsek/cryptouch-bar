@@ -48,9 +48,26 @@ private extension TouchBarCoinItemController {
             }
             self.displayCoin = newCoin
             
-            self.rootView.update(nameLabelText: self.coinDetails.displayName,
-                                 priceLabelText: self.displayCoin?.displayPrice ?? "",
+            self.rootView.update(nameLabelText: self.getDisplayName(),
+                                 priceLabelText: self.getDisplayPrice(forCoin: newCoin),
                                  priceLabelColor: self.priceStatus.color)
+        }
+    }
+
+    func getDisplayPrice(forCoin coin: DisplayCoin) -> String {
+        if let priceValue = Double(coin.price),
+           let visibleDecimalPlaces = CoinUtils.calculateVisibleDecimalPlaces(for: self.coinDetails) {
+            return String(format: "%.\(visibleDecimalPlaces)f", priceValue)
+        } else {
+            return coin.price
+        }
+    }
+
+    func getDisplayName() -> String {
+        if let baseAsset = coinDetails.baseAsset, let quoteAsset = coinDetails.quoteAsset {
+            return "\(baseAsset)/\(quoteAsset)"
+        } else {
+            return coinDetails.symbol
         }
     }
 }
